@@ -1,0 +1,8 @@
+{
+  "package_name": "groundwater_ml_credibility_audit",
+  "version": "1.0.0",
+  "built_at_utc": "2026-07-12T09:09:27.146214+00:00",
+  "status": "release",
+  "corpus_rows": 532,
+  "known_provenance_blockers": []
+}
