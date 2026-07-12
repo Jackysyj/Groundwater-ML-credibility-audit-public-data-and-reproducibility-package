@@ -1,0 +1,76 @@
+{
+  "dataset": "HydroShare Assam Brahmaputra arsenic, 2392 wells, India",
+  "task_type": "water_quality_mapping, classification (As > 10 ug/L WHO/BIS), REGIONAL ~75x90 km",
+  "target": "As_class",
+  "metric": "ROC-AUC",
+  "n_features": 26,
+  "n_wells": 2392,
+  "exceedance_rate": 0.4954013377926421,
+  "block_deg_main": 0.15,
+  "idw_k": 8,
+  "spatial_scale_note": "Regional scale complements the national (US nitrate/arsenic) and global (fluoride) datasets; arsenic now collapses in the US AND India, across national+regional scales.",
+  "random_kfold": {
+    "n_folds": 14,
+    "ml_median_auc": 0.9018817022211785,
+    "ml_mean_auc_weighted": 0.9016849552323487,
+    "idw_median_auc": 0.9168556266719319,
+    "idw_mean_auc_weighted": 0.9154044446690164
+  },
+  "spatial_block_cv": {
+    "n_folds": 14,
+    "ml_median_auc": 0.588014351808139,
+    "ml_mean_auc_weighted": 0.632101078383024,
+    "idw_median_auc": 0.6986557503633721,
+    "idw_mean_auc_weighted": 0.7092733491880524
+  },
+  "gap_randomkfold_minus_spatialblock_ml_median_auc": 0.3138673504130395,
+  "acr_standard_regime": {
+    "acr": 1.037259532762983,
+    "ml_skill": 0.40188170222117847,
+    "idw_skill": 0.4168556266719319,
+    "increment_ml_minus_idw": -0.014973924450753406,
+    "reading": "baseline meets/beats ML (ACR >= 100%, increment <= 0): a zero-learning spatial IDW baseline reproduces essentially all reported ML skill. Report per protocol as 'baseline meets/beats ML', NOT a literal >100% recovery fraction. This is the extreme case of the ACR thesis, driven by high point density (~1-2 km spacing) in a small region.",
+    "note": "ACR = IDW-freq baseline skill / ML skill under random k-fold; skill = AUC-0.5."
+  },
+  "extrapolation_collapse_check": {
+    "ml_random_to_spatial_auc": [
+      0.9018817022211785,
+      0.588014351808139
+    ],
+    "idw_random_to_spatial_auc": [
+      0.9168556266719319,
+      0.6986557503633721
+    ],
+    "ml_collapse": 0.3138673504130395,
+    "idw_collapse": 0.21819987630855975,
+    "extrapolative_acr_informational": 2.2570836037788298,
+    "note": "Leakage is confirmed by the ABSOLUTE-SKILL collapse of BOTH ML and the IDW baseline from random to spatial holdout, NOT by the extrapolative ACR ratio. Here the extrapolative ACR actually RISES (ML collapses harder than IDW), so it is reported as informational only and must not be read as 'ACR falls -> leakage'."
+  },
+  "blocksize_sensitivity": [
+    {
+      "block_deg": 0.1,
+      "n_folds": 15,
+      "ml_median_auc": 0.631569787678385,
+      "idw_median_auc": 0.7105812739296903
+    },
+    {
+      "block_deg": 0.15,
+      "n_folds": 14,
+      "ml_median_auc": 0.588014351808139,
+      "idw_median_auc": 0.6986557503633721
+    },
+    {
+      "block_deg": 0.2,
+      "n_folds": 10,
+      "ml_median_auc": 0.6478811271254551,
+      "idw_median_auc": 0.7397026321076954
+    },
+    {
+      "block_deg": 0.25,
+      "n_folds": 7,
+      "ml_median_auc": 0.5924032140248356,
+      "idw_median_auc": 0.5588020452885318
+    }
+  ],
+  "redline_note": "Authors' physical predictors, measured exceedance target, directly measured AUC gap and skill ratio. No composite score."
+}

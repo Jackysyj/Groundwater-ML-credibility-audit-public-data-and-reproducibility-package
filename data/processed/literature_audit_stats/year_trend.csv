@@ -1,0 +1,7 @@
+subset,n_subset,n_wq,wq_spatial_holdout_n,wq_spatial_holdout_pct,n_wl,wl_persistence_n,wl_persistence_pct,data_open_n,data_open_pct,publication_year,wq_spatial_holdout_pct_3yr,wl_persistence_pct_3yr
+2021,1,1,0,0.0,0,0,,0,0.0,2021,,
+2022,64,31,3,9.7,25,0,0.0,15,23.4,2022,4.8,
+2023,77,36,2,5.6,28,0,0.0,13,16.9,2023,5.1,0.0
+2024,127,64,3,4.7,40,1,2.5,19,15.0,2024,6.7,0.8
+2025,151,74,2,2.7,57,1,1.8,26,17.2,2025,4.3,1.4
+2026,110,60,7,11.7,28,0,0.0,18,16.4,2026,6.4,1.4

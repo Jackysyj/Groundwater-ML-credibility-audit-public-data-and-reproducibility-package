@@ -1,0 +1,52 @@
+{
+  "nitrate": {
+    "n_units": 53,
+    "acr_pct": 81.9,
+    "ci95_lo": 75.9,
+    "ci95_hi": 88.4,
+    "n_boot": 2000
+  },
+  "fluoride": {
+    "n_units": 16,
+    "acr_pct": 87.3,
+    "ci95_lo": 76.0,
+    "ci95_hi": 96.0,
+    "n_boot": 2000
+  },
+  "arsenic": {
+    "n_units": 13,
+    "acr_pct": 45.5,
+    "ci95_lo": 41.9,
+    "ci95_hi": 47.3,
+    "n_boot": 2000
+  },
+  "assam_arsenic": {
+    "n_units": 14,
+    "acr_pct": 105.0,
+    "ci95_lo": 101.0,
+    "ci95_hi": 108.1,
+    "n_boot": 2000
+  },
+  "gems_de": {
+    "n_units": 131,
+    "acr_pct": 95.0,
+    "ci95_lo": 91.7,
+    "ci95_hi": 96.3,
+    "n_boot": 2000
+  },
+  "ncp_cn": {
+    "n_units": 62,
+    "acr_pct": 95.9,
+    "ci95_lo": 86.6,
+    "ci95_hi": 101.2,
+    "n_boot": 2000
+  },
+  "grow_16": {
+    "n_units": 16,
+    "acr_pct": 90.5,
+    "ci95_lo": 86.5,
+    "ci95_hi": 95.3,
+    "n_boot": 2000
+  },
+  "method": "2000-draw bootstrap over resampling units read from shared per-fold CSVs (spatial: acr_folds.py; temporal: spatial_cv_results/persistence_by_country). ACR = median(baseline skill)/median(ML skill) per draw; 95% CI = 2.5/97.5 percentiles. Folds are IDENTICAL to the headline ACR (no block-count/seed drift)."
+}

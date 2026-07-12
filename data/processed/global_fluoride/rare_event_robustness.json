@@ -1,0 +1,95 @@
+{
+  "dataset": "Podgorski & Berg 2022 global fluoride sample (F_sample.rda)",
+  "purpose": "Rare-event robustness for the fluoride spatial kill-shot; does not change headline ROC-AUC results.",
+  "target": "depBIN",
+  "global_prevalence": 0.008510179898739631,
+  "metric_note": "PR-AUC is sklearn average_precision_score; AP lift = PR-AUC / test-fold prevalence.",
+  "regime_summary": {
+    "random_kfold": {
+      "n_folds": 6,
+      "median_roc_auc": 0.862402481874464,
+      "median_pr_auc": 0.20307457344187207,
+      "median_prevalence": 0.008354559247272774,
+      "median_ap_lift": 24.5142403545502,
+      "min_roc_auc": 0.7940190611076687,
+      "min_pr_auc": 0.16784476880388147
+    },
+    "spatial_block_5deg": {
+      "n_folds": 16,
+      "median_roc_auc": 0.5718108107125193,
+      "median_pr_auc": 0.04891079755977412,
+      "median_prevalence": 0.032802557284975956,
+      "median_ap_lift": 1.3605390142192606,
+      "min_roc_auc": 0.4012158054711246,
+      "min_pr_auc": 0.00233188734610398
+    },
+    "leave_one_continent": {
+      "n_folds": 6,
+      "median_roc_auc": 0.47649119435183324,
+      "median_pr_auc": 0.011323894993272117,
+      "median_prevalence": 0.008900254355131008,
+      "median_ap_lift": 1.2836725622468836,
+      "min_roc_auc": 0.30316466089567645,
+      "min_pr_auc": 0.004968633595908578
+    }
+  },
+  "leave_one_continent_positive_count_sensitivity": {
+    "all": {
+      "n_folds": 6,
+      "median_roc_auc": 0.47649119435183324,
+      "median_pr_auc": 0.011323894993272117,
+      "median_prevalence": 0.008900254355131008,
+      "median_ap_lift": 1.2836725622468836,
+      "min_roc_auc": 0.30316466089567645,
+      "min_pr_auc": 0.004968633595908578,
+      "min_pos_threshold": 0,
+      "continents": [
+        "Africa",
+        "Asia",
+        "Australia",
+        "Europe",
+        "North America",
+        "South America"
+      ]
+    },
+    "n_pos_ge20": {
+      "n_folds": 4,
+      "median_roc_auc": 0.47649119435183324,
+      "median_pr_auc": 0.011323894993272117,
+      "median_prevalence": 0.008900254355131008,
+      "median_ap_lift": 1.011665322834396,
+      "min_roc_auc": 0.30316466089567645,
+      "min_pr_auc": 0.008384342120861105,
+      "min_pos_threshold": 20,
+      "continents": [
+        "Africa",
+        "Asia",
+        "Australia",
+        "North America"
+      ]
+    },
+    "n_pos_ge50": {
+      "n_folds": 3,
+      "median_roc_auc": 0.44574095316504303,
+      "median_pr_auc": 0.01341552389165513,
+      "median_prevalence": 0.010019723865877713,
+      "median_ap_lift": 0.8367837510386968,
+      "min_roc_auc": 0.30316466089567645,
+      "min_pr_auc": 0.008384342120861105,
+      "min_pos_threshold": 50,
+      "continents": [
+        "Africa",
+        "Australia",
+        "North America"
+      ]
+    }
+  },
+  "leave_one_continent_n_pos_spearman": {
+    "n_folds": 6,
+    "n_pos_vs_roc_auc_rho": -0.14285714285714288,
+    "n_pos_vs_roc_auc_p": 0.7871720116618075,
+    "n_pos_vs_pr_auc_rho": 0.028571428571428574,
+    "n_pos_vs_pr_auc_p": 0.9571545189504373
+  },
+  "interpretation": "Fluoride remains a rare-event, global-scale corroboration rather than primary evidence. Use AP lift and positive-count sensitivity alongside ROC-AUC because raw PR-AUC depends on test-fold prevalence."
+}

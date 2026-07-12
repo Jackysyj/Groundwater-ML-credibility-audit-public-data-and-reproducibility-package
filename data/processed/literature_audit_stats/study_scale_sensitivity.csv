@@ -1,0 +1,7 @@
+subset,n_subset,n_wq,wq_spatial_holdout_n,wq_spatial_holdout_pct,n_wl,wl_persistence_n,wl_persistence_pct,data_open_n,data_open_pct
+single_site,32,6,1,16.7,12,0,0.0,8,25.0
+local,204,111,6,5.4,68,1,1.5,21,10.3
+regional,245,127,8,6.3,85,0,0.0,43,17.6
+national,39,19,2,10.5,13,1,7.7,19,48.7
+global,5,1,0,0.0,1,0,0.0,1,20.0
+unclear,7,3,0,0.0,0,0,,0,0.0

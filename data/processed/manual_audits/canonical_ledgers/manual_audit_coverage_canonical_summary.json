@@ -1,0 +1,14 @@
+{
+  "status": "researcher_verified_complete",
+  "corpus_n": 532,
+  "researcher_confirmation_complete_n": 179,
+  "researcher_confirmation_required_n": 179,
+  "codex_prereview_counted_as_manual_audit": false,
+  "manual_audit_union_n": 400,
+  "manual_audit_union_pct": 75.2,
+  "double_blind_n": 154,
+  "single_review_only_n": 246,
+  "not_manually_reviewed_n": 132,
+  "legacy_audit_union_after_doi_dedup_n": 325,
+  "tiers_sum_to_corpus": true
+}

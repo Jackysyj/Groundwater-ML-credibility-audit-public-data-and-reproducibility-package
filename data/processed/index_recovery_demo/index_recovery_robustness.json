@@ -1,0 +1,233 @@
+{
+  "purpose": "Robustness + multi-model reproduction for the index-recovery branch (Free-Baseline Recovery family, branch 2). External demonstrators only.",
+  "seed": 42,
+  "seeds_multiseed": [
+    42,
+    7,
+    101,
+    2024,
+    31337
+  ],
+  "n_folds": 5,
+  "linear_index": {
+    "dataset": "SunilVarma India groundwater",
+    "index_kind": "linear",
+    "n": 19029,
+    "n_components": 14,
+    "A_multimodel_r2": {
+      "OLS_linear": 1.0,
+      "Ridge_linear": 1.0,
+      "RandomForest": 0.9964,
+      "XGBoost_gpu": 0.9577,
+      "HistGBM": 0.9603,
+      "kNN": 0.9616,
+      "MLP_neural": 1.0
+    },
+    "A_reading": "Every learner <= OLS (OLS already R^2~1); the reported ML skill is formula recovery, learner-independent.",
+    "flexible_min_r2": 0.9577,
+    "flexible_max_r2": 1.0,
+    "B_multiseed": {
+      "seeds": [
+        42,
+        7,
+        101,
+        2024,
+        31337
+      ],
+      "ols_mean": 1.0,
+      "ols_sd": 0.0,
+      "xgb_mean": 0.9624,
+      "xgb_sd": 0.0041
+    },
+    "C_subsample_ols": [
+      {
+        "n": 500,
+        "ols_r2": 1.0
+      },
+      {
+        "n": 2000,
+        "ols_r2": 1.0
+      },
+      {
+        "n": 5000,
+        "ols_r2": 1.0
+      },
+      {
+        "n": 10000,
+        "ols_r2": 1.0
+      },
+      {
+        "n": 19029,
+        "ols_r2": 1.0
+      }
+    ],
+    "D_leave_one_component_out": {
+      "full_ols_r2": 1.0,
+      "per_component": [
+        {
+          "dropped": "TDS",
+          "ols_r2": 0.9659,
+          "delta_vs_full": -0.0341
+        },
+        {
+          "dropped": "EC",
+          "ols_r2": 0.9963,
+          "delta_vs_full": -0.0037
+        },
+        {
+          "dropped": "HCO3",
+          "ols_r2": 0.9995,
+          "delta_vs_full": -0.0005
+        },
+        {
+          "dropped": "SO4",
+          "ols_r2": 0.9995,
+          "delta_vs_full": -0.0005
+        },
+        {
+          "dropped": "NO3",
+          "ols_r2": 0.9996,
+          "delta_vs_full": -0.0004
+        },
+        {
+          "dropped": "Cl",
+          "ols_r2": 0.9998,
+          "delta_vs_full": -0.0002
+        },
+        {
+          "dropped": "Na",
+          "ols_r2": 0.9999,
+          "delta_vs_full": -0.0001
+        },
+        {
+          "dropped": "pH",
+          "ols_r2": 1.0,
+          "delta_vs_full": -0.0
+        },
+        {
+          "dropped": "CO3",
+          "ols_r2": 1.0,
+          "delta_vs_full": 0.0
+        },
+        {
+          "dropped": "TH",
+          "ols_r2": 1.0,
+          "delta_vs_full": 0.0
+        },
+        {
+          "dropped": "Ca",
+          "ols_r2": 1.0,
+          "delta_vs_full": -0.0
+        },
+        {
+          "dropped": "Mg",
+          "ols_r2": 1.0,
+          "delta_vs_full": -0.0
+        },
+        {
+          "dropped": "K",
+          "ols_r2": 1.0,
+          "delta_vs_full": -0.0
+        },
+        {
+          "dropped": "F",
+          "ols_r2": 1.0,
+          "delta_vs_full": 0.0
+        }
+      ],
+      "max_single_drop": -0.0341
+    }
+  },
+  "nonlinear_index": {
+    "dataset": "Nature Sci Data Canada (CCME)",
+    "index_kind": "nonlinear",
+    "n": 3949,
+    "n_components": 8,
+    "A_multimodel_r2": {
+      "OLS_linear": 0.5272,
+      "Ridge_linear": 0.5272,
+      "RandomForest": 0.9924,
+      "XGBoost_gpu": 0.9933,
+      "HistGBM": 0.9926,
+      "kNN": 0.6527,
+      "MLP_neural": 0.9496
+    },
+    "A_reading": "Every FLEXIBLE learner reaches high R^2 (all recover the non-linear formula); the two linear models fail. High R^2 is learner-independent formula recovery, not environmental prediction.",
+    "flexible_min_r2": 0.6527,
+    "flexible_max_r2": 0.9933,
+    "B_multiseed": {
+      "seeds": [
+        42,
+        7,
+        101,
+        2024,
+        31337
+      ],
+      "ols_mean": 0.5307,
+      "ols_sd": 0.0023,
+      "xgb_mean": 0.9937,
+      "xgb_sd": 0.0005
+    },
+    "C_subsample_ols": [
+      {
+        "n": 500,
+        "ols_r2": 0.482
+      },
+      {
+        "n": 2000,
+        "ols_r2": 0.5338
+      },
+      {
+        "n": 3949,
+        "ols_r2": 0.5272
+      }
+    ],
+    "D_leave_one_component_out": {
+      "full_ols_r2": 0.5272,
+      "per_component": [
+        {
+          "dropped": "Ammonia (mg/l)",
+          "ols_r2": 0.4185,
+          "delta_vs_full": -0.1087
+        },
+        {
+          "dropped": "Orthophosphate (mg/l)",
+          "ols_r2": 0.4707,
+          "delta_vs_full": -0.0565
+        },
+        {
+          "dropped": "Nitrate (mg/l)",
+          "ols_r2": 0.4995,
+          "delta_vs_full": -0.0277
+        },
+        {
+          "dropped": "Biochemical Oxygen Demand (mg/l)",
+          "ols_r2": 0.5049,
+          "delta_vs_full": -0.0223
+        },
+        {
+          "dropped": "Temperature (cel)",
+          "ols_r2": 0.5174,
+          "delta_vs_full": -0.0098
+        },
+        {
+          "dropped": "Dissolved Oxygen (mg/l)",
+          "ols_r2": 0.5243,
+          "delta_vs_full": -0.0029
+        },
+        {
+          "dropped": "pH (ph units)",
+          "ols_r2": 0.5264,
+          "delta_vs_full": -0.0008
+        },
+        {
+          "dropped": "Nitrogen (mg/l)",
+          "ols_r2": 0.5271,
+          "delta_vs_full": -0.0001
+        }
+      ],
+      "max_single_drop": -0.1087
+    }
+  },
+  "redline_note": "Directly measured per-dataset R^2 across learners/seeds/subsamples. No composite score, never regressed against an outcome."
+}

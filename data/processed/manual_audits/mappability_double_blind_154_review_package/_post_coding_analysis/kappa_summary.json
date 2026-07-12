@@ -1,0 +1,24 @@
+{
+  "mappability_class": {
+    "n": 154,
+    "agreement": 0.987,
+    "kappa": 0.9815,
+    "labels": [
+      "genuine_mapping",
+      "hydrochem_association",
+      "index_recovery",
+      "mixed",
+      "unclear"
+    ]
+  },
+  "spatial_holdout_reported": {
+    "n": 154,
+    "agreement": 0.9675,
+    "kappa": 0.7687,
+    "labels": [
+      "cannot_tell",
+      "no",
+      "yes"
+    ]
+  }
+}

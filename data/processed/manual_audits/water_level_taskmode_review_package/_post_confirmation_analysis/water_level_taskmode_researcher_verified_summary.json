@@ -1,0 +1,31 @@
+{
+  "status": "researcher_verified_full_text_audit_complete",
+  "n_papers": 179,
+  "taskmode_counts": {
+    "exogenous_driver_forecast": 48,
+    "gap_filling_or_imputation": 4,
+    "local_autoregressive_forecast": 47,
+    "mixed": 2,
+    "multi_horizon_forecast": 44,
+    "spatial_transfer_or_ungauged": 20,
+    "storage_grace_downscaling": 12,
+    "unclear": 2
+  },
+  "core_denominator_n": 91,
+  "core_persistence_n": 2,
+  "core_persistence_pct": 2.2,
+  "core_persistence_exact_ci95": [
+    0.27,
+    7.71
+  ],
+  "fieldwide_persistence_n": 2,
+  "fieldwide_persistence_pct": 1.1,
+  "fieldwide_persistence_exact_ci95": [
+    0.14,
+    3.98
+  ],
+  "qwen_final_taskmode_agreement_pct": 73.2,
+  "researcher_corrected_n": 6,
+  "writing_label": "researcher-verified full-text audit",
+  "not_double_blind": true
+}

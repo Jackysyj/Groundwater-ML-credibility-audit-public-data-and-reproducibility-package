@@ -1,0 +1,58 @@
+{
+ "accessed": "2026-07-11",
+ "datasets": {
+  "french_piezoforecast": {
+   "display_name": "FrenchPiezo",
+   "status": "verified",
+   "landing_page_url": "https://zenodo.org/records/7193812",
+   "version_doi": "10.5281/zenodo.7193812",
+   "concept_doi": "10.5281/zenodo.7193811",
+   "version": "version not stated",
+   "cite_as": "MBOUOPDA, M. F., GUYET, T., LABROCHE, N., & HENRIOT, A. (2022). FrenchPiezo: the French mainland groundwater level multivariate time series [Dataset]. Zenodo. https://doi.org/10.5281/ZENODO.7193812",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+   "mandatory_attribution": "Give appropriate credit, provide a link to the license, and indicate if changes were made.",
+   "fingerprint_evidence": [
+    "Official metadata names dataset_2015_2021.csv, dataset_2015_2021_nomissing_linear.csv, and dataset_stations.csv and defines bss, p, tp, and e.",
+    "A fresh official dataset_stations.csv download is byte-identical to the retained file: SHA-256 a4246c87bc286c0e324ac49fe693afad679db393d1dfd778d99929a4d40887e3; 772789 bytes.",
+    "The retained linearly imputed file is daily, uses bss/time/tp/e/p, and spans 2015-01-01 to 2021-07-24. The repository description reports an earlier 1026-series/January-2021 summary; the exact companion-file checksum establishes source identity despite that stale summary."
+   ]
+  },
+  "swiss_groundwater_database": {
+   "display_name": "Swiss Groundwater Database",
+   "status": "verified",
+   "landing_page_url": "https://zenodo.org/records/14260400",
+   "version_doi": "10.5281/zenodo.14260400",
+   "concept_doi": "10.5281/zenodo.14260399",
+   "version": "1.0",
+   "associated_publication_doi": "10.1038/s41597-026-07353-6",
+   "cite_as": "Collenteur, R., & Moeck, C. (2026). The Swiss Groundwater Database (Version 1.0) [Dataset]. Zenodo. https://doi.org/10.5281/ZENODO.14260400",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+   "mandatory_attribution": "Give appropriate credit, provide a link to the license, and indicate if changes were made. The repository advises commercial users to obtain original authority data rather than treating the database as a replacement.",
+   "fingerprint_evidence": [
+    "The Scientific Data descriptor reports 985 monitoring wells, imputed series for 1980-2023, and meteorological coverage from 1971 to August 2023.",
+    "The repository describes the exact 0_data/final, raw, processed, gis, and imputation hierarchy retained in the local 0_data.zip.",
+    "The local archive contains canton-level files such as ZG_imputed.csv and has SHA-256 4e1d0d5d1625f597020c529fec5413e1aedb0fd07df29ce6c7567e9ca049d91e."
+   ]
+  },
+  "tuscany_groundwater_drought": {
+   "display_name": "Tuscany groundwater drought",
+   "status": "verified",
+   "landing_page_url": "https://zenodo.org/records/17491496",
+   "version_doi": "10.5281/zenodo.17491496",
+   "concept_doi": "10.5281/zenodo.17491495",
+   "version": "version not stated",
+   "associated_record_doi": "10.5281/zenodo.19398188",
+   "cite_as": "Elsaidy, A. (2025). Groundwater Drought and Water Balance Indicators in Tuscany (2005-2023) [Dataset]. Zenodo. https://doi.org/10.5281/ZENODO.17491496",
+   "license": "Creative Commons Attribution 4.0 International",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+   "mandatory_attribution": "Give appropriate credit, provide a link to the license, and indicate if changes were made. The dataset description additionally identifies SIR Toscana and ISPRA BIGBANG80 as the underlying data sources.",
+   "fingerprint_evidence": [
+    "A fresh official Tuscany.rar download is byte-identical to the retained archive: SHA-256 d7792fdd774be8e5002d1652f911290ace988374fe6b07b2709de4518db58771; 2409626 bytes.",
+    "Both archives contain the same 114 monthly TOS*.csv files.",
+    "The files span 2005-2023 and contain the exact pr, tp, td, ae, rf, and ws driver fields described by the repository."
+   ]
+  }
+ }
+}

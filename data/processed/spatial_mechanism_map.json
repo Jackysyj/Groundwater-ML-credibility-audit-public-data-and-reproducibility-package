@@ -1,0 +1,310 @@
+{
+  "status": "DESCRIPTIVE mechanism illustration (NOT a predictive/universal curve; the predictive version was falsified on GROW).",
+  "design": "Standard random 80/20 split (seed 1182). Bin test points by nearest-training-well distance; per bin report ML skill and zero-learning neighbour-baseline skill. Report Spearman(distance, error) descriptively. No fitted correction curve, no extrapolation.",
+  "density_radius_km": 50.0,
+  "run_metadata": {
+    "seed": 1182,
+    "device_requested": "cuda",
+    "mississippi_nrounds": 500
+  },
+  "nitrate": {
+    "metric": "R2 (regression)",
+    "baseline": "IDW-8",
+    "n_test": 2417,
+    "bins": [
+      {
+        "dist_lo_km": 0.0,
+        "dist_hi_km": 1.0,
+        "median_dist_km": 0.4,
+        "n": 484,
+        "ml_skill": 0.4832,
+        "baseline_skill": 0.4505,
+        "increment": 0.0327
+      },
+      {
+        "dist_lo_km": 1.0,
+        "dist_hi_km": 2.5,
+        "median_dist_km": 1.7,
+        "n": 483,
+        "ml_skill": 0.4641,
+        "baseline_skill": 0.3546,
+        "increment": 0.1095
+      },
+      {
+        "dist_lo_km": 2.5,
+        "dist_hi_km": 5.5,
+        "median_dist_km": 3.8,
+        "n": 483,
+        "ml_skill": 0.3915,
+        "baseline_skill": 0.3394,
+        "increment": 0.0521
+      },
+      {
+        "dist_lo_km": 5.5,
+        "dist_hi_km": 12.9,
+        "median_dist_km": 8.5,
+        "n": 483,
+        "ml_skill": 0.4149,
+        "baseline_skill": 0.292,
+        "increment": 0.1229
+      },
+      {
+        "dist_lo_km": 12.9,
+        "dist_hi_km": 140.7,
+        "median_dist_km": 21.1,
+        "n": 484,
+        "ml_skill": 0.4313,
+        "baseline_skill": 0.3027,
+        "increment": 0.1286
+      }
+    ],
+    "spearman_dist_vs_ml_abserr": 0.081,
+    "spearman_dist_vs_base_abserr": 0.158,
+    "spearman_density_vs_ml_abserr": -0.066,
+    "spearman_density_vs_base_abserr": -0.079
+  },
+  "fluoride": {
+    "metric": "AUC (classification)",
+    "baseline": "IDW-freq-16",
+    "n_test": 7427,
+    "bins": [
+      {
+        "dist_lo_km": 0.0,
+        "dist_hi_km": 1.0,
+        "median_dist_km": 0.4,
+        "n": 1486,
+        "ml_skill": 0.8404,
+        "baseline_skill": 0.9155,
+        "increment": -0.0751
+      },
+      {
+        "dist_lo_km": 1.0,
+        "dist_hi_km": 2.1,
+        "median_dist_km": 1.6,
+        "n": 1485,
+        "ml_skill": 0.8535,
+        "baseline_skill": 0.9033,
+        "increment": -0.0498
+      },
+      {
+        "dist_lo_km": 2.1,
+        "dist_hi_km": 4.0,
+        "median_dist_km": 3.0,
+        "n": 1485,
+        "ml_skill": 0.9252,
+        "baseline_skill": 0.6947,
+        "increment": 0.2305
+      },
+      {
+        "dist_lo_km": 4.0,
+        "dist_hi_km": 9.9,
+        "median_dist_km": 6.2,
+        "n": 1485,
+        "ml_skill": 0.7846,
+        "baseline_skill": 0.7933,
+        "increment": -0.0087
+      },
+      {
+        "dist_lo_km": 9.9,
+        "dist_hi_km": 557.3,
+        "median_dist_km": 17.7,
+        "n": 1486,
+        "ml_skill": 0.6774,
+        "baseline_skill": 0.7421,
+        "increment": -0.0647
+      }
+    ],
+    "spearman_dist_vs_ml_proberr": 0.183,
+    "spearman_dist_vs_base_proberr": 0.107,
+    "spearman_density_vs_ml_proberr": -0.425,
+    "spearman_density_vs_base_proberr": -0.181
+  },
+  "assam_arsenic": {
+    "metric": "AUC (classification)",
+    "baseline": "IDW-freq-8",
+    "n_test": 479,
+    "bins": [
+      {
+        "dist_lo_km": 0.2,
+        "dist_hi_km": 0.2,
+        "median_dist_km": 0.2,
+        "n": 96,
+        "ml_skill": 0.914,
+        "baseline_skill": 0.9022,
+        "increment": 0.0118
+      },
+      {
+        "dist_lo_km": 0.2,
+        "dist_hi_km": 0.2,
+        "median_dist_km": 0.2,
+        "n": 96,
+        "ml_skill": 0.9147,
+        "baseline_skill": 0.9187,
+        "increment": -0.004
+      },
+      {
+        "dist_lo_km": 0.2,
+        "dist_hi_km": 0.5,
+        "median_dist_km": 0.3,
+        "n": 95,
+        "ml_skill": 0.8795,
+        "baseline_skill": 0.8802,
+        "increment": -0.0007
+      },
+      {
+        "dist_lo_km": 0.5,
+        "dist_hi_km": 0.7,
+        "median_dist_km": 0.5,
+        "n": 96,
+        "ml_skill": 0.868,
+        "baseline_skill": 0.9205,
+        "increment": -0.0525
+      },
+      {
+        "dist_lo_km": 0.7,
+        "dist_hi_km": 2.3,
+        "median_dist_km": 0.9,
+        "n": 96,
+        "ml_skill": 0.8382,
+        "baseline_skill": 0.8902,
+        "increment": -0.0519
+      }
+    ],
+    "spearman_dist_vs_ml_proberr": 0.093,
+    "spearman_dist_vs_base_proberr": 0.025,
+    "spearman_density_vs_ml_proberr": 0.041,
+    "spearman_density_vs_base_proberr": 0.037
+  },
+  "mississippi_specific_conductance": {
+    "metric": "R2 (regression)",
+    "baseline": "IDW-8",
+    "n_test": 875,
+    "n_encoded_features": 58,
+    "bins": [
+      {
+        "dist_lo_km": 0.0,
+        "dist_hi_km": 0.5,
+        "median_dist_km": 0.2,
+        "n": 175,
+        "ml_skill": 0.8641,
+        "baseline_skill": 0.8328,
+        "increment": 0.0313
+      },
+      {
+        "dist_lo_km": 0.5,
+        "dist_hi_km": 1.3,
+        "median_dist_km": 0.8,
+        "n": 175,
+        "ml_skill": 0.7128,
+        "baseline_skill": 0.6846,
+        "increment": 0.0283
+      },
+      {
+        "dist_lo_km": 1.3,
+        "dist_hi_km": 2.3,
+        "median_dist_km": 1.7,
+        "n": 175,
+        "ml_skill": 0.7433,
+        "baseline_skill": 0.6547,
+        "increment": 0.0886
+      },
+      {
+        "dist_lo_km": 2.3,
+        "dist_hi_km": 3.9,
+        "median_dist_km": 3.0,
+        "n": 175,
+        "ml_skill": 0.7616,
+        "baseline_skill": 0.7331,
+        "increment": 0.0285
+      },
+      {
+        "dist_lo_km": 3.9,
+        "dist_hi_km": 20.4,
+        "median_dist_km": 5.6,
+        "n": 175,
+        "ml_skill": 0.5451,
+        "baseline_skill": 0.3917,
+        "increment": 0.1533
+      }
+    ],
+    "spearman_dist_vs_ml_abserr": 0.099,
+    "spearman_dist_vs_base_abserr": 0.119,
+    "spearman_density_vs_ml_abserr": -0.117,
+    "spearman_density_vs_base_abserr": -0.116
+  },
+  "mississippi_chloride": {
+    "metric": "R2 (regression)",
+    "baseline": "IDW-8",
+    "n_test": 1154,
+    "n_encoded_features": 47,
+    "bins": [
+      {
+        "dist_lo_km": 0.0,
+        "dist_hi_km": 0.2,
+        "median_dist_km": 0.0,
+        "n": 231,
+        "ml_skill": 0.8166,
+        "baseline_skill": 0.8191,
+        "increment": -0.0025
+      },
+      {
+        "dist_lo_km": 0.2,
+        "dist_hi_km": 0.7,
+        "median_dist_km": 0.4,
+        "n": 231,
+        "ml_skill": 0.7869,
+        "baseline_skill": 0.7598,
+        "increment": 0.0271
+      },
+      {
+        "dist_lo_km": 0.7,
+        "dist_hi_km": 1.7,
+        "median_dist_km": 1.1,
+        "n": 230,
+        "ml_skill": 0.6977,
+        "baseline_skill": 0.696,
+        "increment": 0.0017
+      },
+      {
+        "dist_lo_km": 1.7,
+        "dist_hi_km": 3.3,
+        "median_dist_km": 2.3,
+        "n": 231,
+        "ml_skill": 0.7147,
+        "baseline_skill": 0.6191,
+        "increment": 0.0955
+      },
+      {
+        "dist_lo_km": 3.3,
+        "dist_hi_km": 21.1,
+        "median_dist_km": 4.8,
+        "n": 231,
+        "ml_skill": 0.5416,
+        "baseline_skill": 0.4411,
+        "increment": 0.1005
+      }
+    ],
+    "spearman_dist_vs_ml_abserr": 0.079,
+    "spearman_dist_vs_base_abserr": 0.144,
+    "spearman_density_vs_ml_abserr": 0.006,
+    "spearman_density_vs_base_abserr": -0.007
+  },
+  "writing_summary": {
+    "target_keys": [
+      "nitrate",
+      "fluoride",
+      "assam_arsenic",
+      "mississippi_specific_conductance",
+      "mississippi_chloride"
+    ],
+    "density_radius_km": 50.0,
+    "density_vs_ml_error_spearman": {
+      "nitrate": -0.066,
+      "fluoride": -0.425,
+      "assam_arsenic": 0.041,
+      "mississippi_specific_conductance": -0.117,
+      "mississippi_chloride": 0.006
+    },
+    "reading": "Mechanism evidence is dataset-dependent. The coordinate-based datasets do not support a single universal near-neighbour leakage mechanism; use the map as bounded mechanism evidence for random validation optimism and spatial non-transferability."
+  }
+}

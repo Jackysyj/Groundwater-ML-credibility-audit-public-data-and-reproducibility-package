@@ -1,0 +1,89 @@
+{
+  "regime": "standard/interpolative",
+  "rows": [
+    {
+      "axis": "spatial",
+      "dataset": "nitrate",
+      "metric": "R2",
+      "ml_value": 0.4614,
+      "baseline_value": 0.3777,
+      "baseline_form": "IDW-8 (distance)",
+      "ml_skill": 0.4614,
+      "baseline_skill": 0.3777,
+      "increment_ml_minus_baseline": 0.0837,
+      "acr_pct": 81.9
+    },
+    {
+      "axis": "spatial",
+      "dataset": "fluoride",
+      "metric": "AUC",
+      "ml_value": 0.8522,
+      "baseline_value": 0.8074,
+      "baseline_form": "IDW-freq-16 (distance)",
+      "ml_skill": 0.3522,
+      "baseline_skill": 0.3074,
+      "increment_ml_minus_baseline": 0.0448,
+      "acr_pct": 87.3
+    },
+    {
+      "axis": "spatial",
+      "dataset": "arsenic",
+      "metric": "AUC",
+      "ml_value": 0.8681,
+      "baseline_value": 0.6673,
+      "baseline_form": "ecoregion-mean (categorical)",
+      "ml_skill": 0.3681,
+      "baseline_skill": 0.1673,
+      "increment_ml_minus_baseline": 0.2008,
+      "acr_pct": 45.5
+    },
+    {
+      "axis": "spatial",
+      "dataset": "assam_arsenic",
+      "metric": "AUC",
+      "ml_value": 0.8999,
+      "baseline_value": 0.9198,
+      "baseline_form": "IDW-freq-8 (distance)",
+      "ml_skill": 0.3999,
+      "baseline_skill": 0.4198,
+      "increment_ml_minus_baseline": -0.0199,
+      "acr_pct": 105.0
+    },
+    {
+      "axis": "temporal",
+      "dataset": "gems_de",
+      "metric": "R2",
+      "ml_value": 0.8028,
+      "baseline_value": 0.7625,
+      "baseline_form": "persistence",
+      "ml_skill": 0.8028,
+      "baseline_skill": 0.7625,
+      "increment_ml_minus_baseline": 0.0403,
+      "acr_pct": 95.0
+    },
+    {
+      "axis": "temporal",
+      "dataset": "ncp_cn",
+      "metric": "R2",
+      "ml_value": 0.6516,
+      "baseline_value": 0.625,
+      "baseline_form": "persistence",
+      "ml_skill": 0.6516,
+      "baseline_skill": 0.625,
+      "increment_ml_minus_baseline": 0.0267,
+      "acr_pct": 95.9
+    },
+    {
+      "axis": "temporal",
+      "dataset": "grow_16",
+      "metric": "R2",
+      "ml_value": 0.7314,
+      "baseline_value": 0.6621,
+      "baseline_form": "persistence",
+      "ml_skill": 0.7314,
+      "baseline_skill": 0.6621,
+      "increment_ml_minus_baseline": 0.0693,
+      "acr_pct": 90.5
+    }
+  ]
+}

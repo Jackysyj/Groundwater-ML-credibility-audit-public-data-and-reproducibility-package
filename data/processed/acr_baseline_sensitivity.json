@@ -1,0 +1,69 @@
+{
+  "regime": "standard/interpolative",
+  "purpose": "show ACR is not an artefact of an arbitrary baseline parameter",
+  "folds": "shared canonical folds from acr_folds.py (identical to headline ACR)",
+  "nitrate_idw_k_sweep": {
+    "1": {
+      "baseline_median_value": 0.0172,
+      "acr_pct": 3.7
+    },
+    "4": {
+      "baseline_median_value": 0.3277,
+      "acr_pct": 71.0
+    },
+    "8": {
+      "baseline_median_value": 0.3777,
+      "acr_pct": 81.9
+    },
+    "16": {
+      "baseline_median_value": 0.3991,
+      "acr_pct": 86.5
+    },
+    "ml_median_value": 0.4614,
+    "metric": "R2"
+  },
+  "fluoride_idw_k_sweep": {
+    "1": {
+      "baseline_median_value": 0.6324,
+      "acr_pct": 37.6
+    },
+    "4": {
+      "baseline_median_value": 0.7256,
+      "acr_pct": 64.1
+    },
+    "8": {
+      "baseline_median_value": 0.7651,
+      "acr_pct": 75.3
+    },
+    "16": {
+      "baseline_median_value": 0.8074,
+      "acr_pct": 87.3
+    },
+    "ml_median_value": 0.8522,
+    "metric": "AUC"
+  },
+  "temporal_persistence": {
+    "gems_de": {
+      "ml_median_r2": 0.8028,
+      "persistence": {
+        "baseline_median_r2": 0.7625,
+        "acr_pct": 95.0
+      }
+    },
+    "ncp_cn": {
+      "ml_median_r2": 0.6516,
+      "persistence": {
+        "baseline_median_r2": 0.625,
+        "acr_pct": 95.9
+      }
+    },
+    "grow_16": {
+      "ml_median_r2": 0.7314,
+      "persistence": {
+        "baseline_median_r2": 0.6621,
+        "acr_pct": 90.5
+      }
+    },
+    "_note": "Climatology-as-series-mean gives R2=0 by construction (it IS the R2 denominator), so it is a degenerate, uninformative temporal baseline and is not reported. Persistence (next=current) is PARAMETER-FREE \u2014 there is no temporal hyperparameter to sweep \u2014 so temporal ACR cannot be an artefact of a baseline-parameter choice. Temporal rows here are recomputed from the lag-aligned GEMS/NCP/GROW persistence experiments; the baseline-parameter robustness demonstration therefore lives on the spatial side (IDW k-sweep above)."
+  }
+}

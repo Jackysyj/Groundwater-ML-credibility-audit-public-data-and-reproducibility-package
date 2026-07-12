@@ -1,0 +1,8 @@
+axis,dataset,metric,ml_value,baseline_value,baseline_form,ml_skill,baseline_skill,increment_ml_minus_baseline,acr_pct
+spatial,nitrate,R2,0.4614,0.3777,IDW-8 (distance),0.4614,0.3777,0.0837,81.9
+spatial,fluoride,AUC,0.8522,0.8074,IDW-freq-16 (distance),0.3522,0.3074,0.0448,87.3
+spatial,arsenic,AUC,0.8681,0.6673,ecoregion-mean (categorical),0.3681,0.1673,0.2008,45.5
+spatial,assam_arsenic,AUC,0.8999,0.9198,IDW-freq-8 (distance),0.3999,0.4198,-0.0199,105.0
+temporal,gems_de,R2,0.8028,0.7625,persistence,0.8028,0.7625,0.0403,95.0
+temporal,ncp_cn,R2,0.6516,0.625,persistence,0.6516,0.625,0.0267,95.9
+temporal,grow_16,R2,0.7314,0.6621,persistence,0.7314,0.6621,0.0693,90.5

@@ -1,0 +1,10 @@
+metric,k,n,pct,ci_low,ci_high
+water_quality_mapping_share,267,532,50.2,46.0,54.4
+water_level_timeseries_share,179,532,33.6,29.8,37.8
+other_share,86,532,16.2,13.3,19.5
+two_theses_share,446,532,83.8,80.5,86.7
+water_quality_mapping_reports_spatial_holdout,17,267,6.4,4.0,10.0
+water_level_timeseries_reports_persistence,2,179,1.1,0.3,4.0
+overall_reports_spatial_holdout,38,532,7.1,5.2,9.7
+overall_reports_any_naive_baseline,4,532,0.8,0.3,1.9
+overall_data_open,92,532,17.3,14.3,20.7

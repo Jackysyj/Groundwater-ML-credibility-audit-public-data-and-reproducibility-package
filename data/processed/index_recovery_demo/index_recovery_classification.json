@@ -1,0 +1,240 @@
+{
+  "purpose": "Classification-target companion for the index-recovery branch, making it symmetric with the spatial branch (regression + classification). Same data as the regression demonstrators; only the target changes (continuous index -> its class label). External demonstrators only; not in corpus / not in any denominator.",
+  "protocol_note": "IDENTICAL protocol to index_recovery_demo/robustness (SEED=42, seeds=[42,7,101,2024,31337], 5-fold, same components, 4 axes). Metric = macro OVR ROC-AUC (matches spatial branch).",
+  "seed": 42,
+  "seeds": [
+    42,
+    7,
+    101,
+    2024,
+    31337
+  ],
+  "n_folds": 5,
+  "linear_index": {
+    "dataset": "SunilVarma India groundwater",
+    "index_kind": "linear",
+    "n": 19029,
+    "n_classes": 5,
+    "n_components": 14,
+    "metric": "macro one-vs-rest ROC-AUC (skill = AUC-0.5, ACR-comparable)",
+    "A_multimodel_auc": {
+      "Logistic_linear": 0.9979,
+      "LDA_linear": 0.9137,
+      "RandomForest": 0.9991,
+      "XGBoost_gpu": 0.9995,
+      "HistGBM": 0.9995,
+      "kNN": 0.9829,
+      "MLP_neural": 0.9998
+    },
+    "A_linear_logistic_auc": 0.9979,
+    "A_flexible_min_auc": 0.9829,
+    "A_flexible_max_auc": 0.9998,
+    "A_accuracy_logistic": 0.9641,
+    "B_multiseed": {
+      "seeds": [
+        42,
+        7,
+        101,
+        2024,
+        31337
+      ],
+      "logistic_mean": 0.9979,
+      "logistic_sd": 0.0,
+      "xgb_mean": 0.9995,
+      "xgb_sd": 0.0
+    },
+    "C_subsample_logistic": [
+      {
+        "n": 500,
+        "logistic_auc": 0.9755
+      },
+      {
+        "n": 2000,
+        "logistic_auc": 0.9875
+      },
+      {
+        "n": 5000,
+        "logistic_auc": 0.9953
+      },
+      {
+        "n": 10000,
+        "logistic_auc": 0.9971
+      },
+      {
+        "n": 19029,
+        "logistic_auc": 0.9979
+      }
+    ],
+    "D_leave_one_component_out": {
+      "full_logistic_auc": 0.9979,
+      "per_component": [
+        {
+          "dropped": "TDS",
+          "auc": 0.9609,
+          "delta_vs_full": -0.037
+        },
+        {
+          "dropped": "EC",
+          "auc": 0.9952,
+          "delta_vs_full": -0.0027
+        },
+        {
+          "dropped": "SO4",
+          "auc": 0.9975,
+          "delta_vs_full": -0.0004
+        },
+        {
+          "dropped": "NO3",
+          "auc": 0.9975,
+          "delta_vs_full": -0.0004
+        },
+        {
+          "dropped": "HCO3",
+          "auc": 0.9976,
+          "delta_vs_full": -0.0003
+        },
+        {
+          "dropped": "Na",
+          "auc": 0.9975,
+          "delta_vs_full": -0.0003
+        },
+        {
+          "dropped": "Cl",
+          "auc": 0.9977,
+          "delta_vs_full": -0.0002
+        },
+        {
+          "dropped": "pH",
+          "auc": 0.9979,
+          "delta_vs_full": 0.0
+        },
+        {
+          "dropped": "K",
+          "auc": 0.9979,
+          "delta_vs_full": -0.0
+        },
+        {
+          "dropped": "F",
+          "auc": 0.9979,
+          "delta_vs_full": 0.0
+        },
+        {
+          "dropped": "CO3",
+          "auc": 0.9979,
+          "delta_vs_full": 0.0001
+        },
+        {
+          "dropped": "TH",
+          "auc": 0.9979,
+          "delta_vs_full": 0.0001
+        },
+        {
+          "dropped": "Ca",
+          "auc": 0.9979,
+          "delta_vs_full": 0.0001
+        },
+        {
+          "dropped": "Mg",
+          "auc": 0.9979,
+          "delta_vs_full": 0.0001
+        }
+      ],
+      "max_single_drop": -0.037
+    }
+  },
+  "nonlinear_index": {
+    "dataset": "Nature Sci Data Canada (CCME)",
+    "index_kind": "nonlinear",
+    "n": 3949,
+    "n_classes": 5,
+    "n_components": 8,
+    "metric": "macro one-vs-rest ROC-AUC (skill = AUC-0.5, ACR-comparable)",
+    "A_multimodel_auc": {
+      "Logistic_linear": 0.9302,
+      "LDA_linear": 0.8536,
+      "RandomForest": 0.9976,
+      "XGBoost_gpu": 0.9974,
+      "HistGBM": 0.9976,
+      "kNN": 0.8205,
+      "MLP_neural": 0.99
+    },
+    "A_linear_logistic_auc": 0.9302,
+    "A_flexible_min_auc": 0.8205,
+    "A_flexible_max_auc": 0.9976,
+    "A_accuracy_logistic": 0.745,
+    "B_multiseed": {
+      "seeds": [
+        42,
+        7,
+        101,
+        2024,
+        31337
+      ],
+      "logistic_mean": 0.9301,
+      "logistic_sd": 0.0003,
+      "xgb_mean": 0.9973,
+      "xgb_sd": 0.0003
+    },
+    "C_subsample_logistic": [
+      {
+        "n": 500,
+        "logistic_auc": 0.8314
+      },
+      {
+        "n": 2000,
+        "logistic_auc": 0.911
+      },
+      {
+        "n": 3949,
+        "logistic_auc": 0.9302
+      }
+    ],
+    "D_leave_one_component_out": {
+      "full_logistic_auc": 0.9302,
+      "per_component": [
+        {
+          "dropped": "Orthophosphate (mg/l)",
+          "auc": 0.8283,
+          "delta_vs_full": -0.1019
+        },
+        {
+          "dropped": "Ammonia (mg/l)",
+          "auc": 0.8951,
+          "delta_vs_full": -0.0352
+        },
+        {
+          "dropped": "Biochemical Oxygen Demand (mg/l)",
+          "auc": 0.9287,
+          "delta_vs_full": -0.0015
+        },
+        {
+          "dropped": "Nitrate (mg/l)",
+          "auc": 0.9288,
+          "delta_vs_full": -0.0015
+        },
+        {
+          "dropped": "Nitrogen (mg/l)",
+          "auc": 0.9298,
+          "delta_vs_full": -0.0004
+        },
+        {
+          "dropped": "Temperature (cel)",
+          "auc": 0.9305,
+          "delta_vs_full": 0.0002
+        },
+        {
+          "dropped": "pH (ph units)",
+          "auc": 0.9306,
+          "delta_vs_full": 0.0003
+        },
+        {
+          "dropped": "Dissolved Oxygen (mg/l)",
+          "auc": 0.9308,
+          "delta_vs_full": 0.0005
+        }
+      ],
+      "max_single_drop": -0.1019
+    }
+  },
+  "redline_note": "Directly measured per-dataset AUC across learners/seeds/subsamples. No composite score, never regressed against an outcome."
+}

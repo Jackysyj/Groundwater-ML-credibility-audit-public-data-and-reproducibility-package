@@ -1,0 +1,65 @@
+{
+  "branch": "index_recovery (algebraic branch of Free-Baseline Recovery family)",
+  "criterion": "The target is a deterministic FORMULA of the predictors. When true, high R^2 is tautological regardless of learner; the metric is the relation, not OLS-vs-ML.",
+  "scope": "EXTERNAL DEMONSTRATORS ONLY. Not in the 539-paper audited corpus; not counted in any prevalence denominator. Illustrate the index_recovery mechanism (35.9% of the water-quality mapping literature by the 2026-07-06 predictor re-audit) without circularity.",
+  "seed": 42,
+  "n_folds": 5,
+  "demonstrators": {
+    "linear_index": {
+      "dataset": "SunilVarma India groundwater",
+      "index_type": "weighted-arithmetic WQI (LINEAR formula of components)",
+      "n": 19029,
+      "n_components": 14,
+      "components": [
+        "pH",
+        "EC",
+        "CO3",
+        "HCO3",
+        "Cl",
+        "SO4",
+        "NO3",
+        "TH",
+        "Ca",
+        "Mg",
+        "Na",
+        "K",
+        "F",
+        "TDS"
+      ],
+      "wqi_range": [
+        9.04,
+        6850.89
+      ],
+      "r2_ols_linear": 1.0,
+      "r2_xgboost": 0.9577,
+      "ml_increment_over_linear": -0.0423,
+      "reading": "Linear index: OLS recovers the formula exactly (R^2~1) and XGBoost adds a NEGATIVE increment. The reported 'ML skill' is pure formula recovery; the ML apparatus contributes nothing."
+    },
+    "nonlinear_index": {
+      "dataset": "Nature Sci Data Canada (CCME)",
+      "index_type": "CCME WQI (NON-LINEAR piecewise/asymptotic formula of components)",
+      "n": 3949,
+      "n_components": 8,
+      "components": [
+        "Ammonia (mg/l)",
+        "Biochemical Oxygen Demand (mg/l)",
+        "Dissolved Oxygen (mg/l)",
+        "Orthophosphate (mg/l)",
+        "pH (ph units)",
+        "Temperature (cel)",
+        "Nitrogen (mg/l)",
+        "Nitrate (mg/l)"
+      ],
+      "wqi_range": [
+        37.66,
+        100.0
+      ],
+      "r2_ols_linear": 0.5272,
+      "r2_ols_quadratic": -0.1725,
+      "r2_xgboost": 0.9933,
+      "ml_increment_over_linear": 0.4661,
+      "reading": "Non-linear index: OLS is a poor fit (R^2~0.53) so XGBoost shows a large apparent 'gain'. But that gain is the flexible learner recovering the known CCME formula, NOT predicting environmental signal at an unsampled site. This is the guard against reading 'ML beats linear -> ML is useful' in an index-recovery task: the diagnostic is the target-is-a-formula-of-predictors relation, not the OLS-vs-ML gap."
+    }
+  },
+  "redline_note": "Per-dataset directly measured R^2 of two learners on the same folds. No composite score, never regressed against an outcome. Constructive contribution is the family unification + criterion, not a new scalar to rank papers by."
+}

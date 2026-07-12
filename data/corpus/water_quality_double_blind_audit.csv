@@ -1,0 +1,155 @@
+canonical_paper_id,doi,target_variable,reviewerA_mappability_class,reviewerB_mappability_class,consensus_mappability_class,reviewerA_spatial_holdout,reviewerB_spatial_holdout,consensus_spatial_holdout_reported,consensus_confidence
+1,10.1016/j.agwat.2025.109975,EWQI and IWQI,index_recovery,index_recovery,index_recovery,no,no,no,high
+8,10.2166/wst.2026.252,RMS-WQI groundwater quality classes,index_recovery,index_recovery,index_recovery,no,no,no,high
+11,10.1007/s13201-023-02043-9,Groundwater nitrate concentration,mixed,mixed,mixed,no,no,no,high
+12,10.1016/j.pce.2026.104440,Water Quality Index (WQI),index_recovery,index_recovery,index_recovery,no,no,no,high
+15,10.1007/s41748-025-00739-3,"Composite water quality and pollution indices (WQI, GPI, WPI, PPI, OPI)",index_recovery,index_recovery,index_recovery,no,no,no,high
+19,10.1016/j.ejrh.2025.102812,Entropy-weighted water quality index (EWQI) and groundwater quality classes,index_recovery,index_recovery,index_recovery,no,no,no,high
+22,10.1007/s41748-025-00888-5,Groundwater salinity susceptibility (electrical conductivity classes),genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+25,10.1016/j.jconhyd.2026.104853,"Groundwater heavy metal concentrations (Fe, Ni, Pb, Cu)",genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+28,10.1016/j.jes.2024.03.052,Binary groundwater vulnerability class based on GVI,mixed,mixed,mixed,no,no,no,high
+43,10.1016/j.scitotenv.2024.172950,Chloride concentration,genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+44,10.1007/s11356-024-32415-w,Water Quality Index (ENW-WQI and CRITIC-WQI),index_recovery,index_recovery,index_recovery,no,no,no,high
+47,10.1007/s41748-024-00524-8,Water Quality Index (WQI),index_recovery,index_recovery,index_recovery,no,no,no,high
+52,10.1016/j.ecolind.2024.112915,Groundwater nitrate concentration,genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+54,10.1007/s41748-025-00870-1,"Irrigation water quality indices (SAR, TH, RSC, MAR, %Na, KR) and specific ions",index_recovery,index_recovery,index_recovery,no,no,no,high
+60,10.1016/j.gsd.2024.101403,Conditioned Vulnerability Index (CVI) / Delta Aquifer Vulnerability,index_recovery,index_recovery,index_recovery,no,no,no,high
+62,10.2166/ws.2022.157,Irrigation Water Quality Index (IWQI),index_recovery,index_recovery,index_recovery,no,no,no,high
+63,10.1016/j.envres.2024.118952,Normalized Entropy Water Quality Index (EWQI),index_recovery,index_recovery,index_recovery,no,no,no,high
+69,10.3390/rs14102379,Binary groundwater nitrate pollution risk (polluted vs. unpolluted based on 50 mg/L threshold),genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+71,10.1016/j.jconhyd.2023.104195,Groundwater arsenic vulnerability,genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+72,10.1016/j.jhydrol.2023.129934,Groundwater nitrate concentration,hydrochem_association,hydrochem_association,hydrochem_association,no,no,no,high
+75,10.1016/j.pce.2026.104487,Water Quality Index (WQI),index_recovery,index_recovery,index_recovery,no,no,no,high
+79,10.2166/nh.2024.036,Groundwater nitrate vulnerability (nitrate > 10 mg/L),genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+81,10.1007/s41748-025-00694-z,Irrigation Water Quality Index (IWQI),index_recovery,index_recovery,index_recovery,no,no,no,high
+84,10.1002/hyp.14750,Potential nitrate removal during infiltration,genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+85,10.1016/j.scitotenv.2024.170247,Binary arsenic exceedance (>10 μg/L) in shallow groundwater,genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+97,10.1016/j.rineng.2025.104674,Nitrate-adjusted DRASTIC vulnerability index (groundwater vulnerability to nitrate),index_recovery,index_recovery,index_recovery,no,no,no,high
+100,10.1016/j.ecoinf.2026.103671,"Groundwater quality parameters (major ions, salinity indicators, pH, SAR)",genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+105,10.1016/j.gexplo.2024.107497,"Occurrence of arsenic, fluoride, and iodine exceeding WHO drinking water thresholds.",mixed,mixed,mixed,no,no,no,high
+106,10.1016/j.scitotenv.2023.169497,Aquifer vulnerability (nitrate-N concentration),genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+109,10.1007/s41748-026-01262-9,Fluoride concentration and non-carcinogenic health risk (Hazard Quotient),unclear,unclear,unclear,cannot_tell,cannot_tell,cannot_tell,high
+112,10.1016/j.gsd.2023.101037,Groundwater vulnerability class (contamination presence/absence),genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+117,10.1016/j.jwpe.2026.109940,Irrigation Water Quality Index (IWQI) categories,index_recovery,index_recovery,index_recovery,no,no,no,high
+118,10.1016/j.scitotenv.2023.166863,Groundwater nitrate concentration classes,genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+119,10.1016/j.jenvman.2025.127572,Entropy Weighted Water Quality Index (EWQI),genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+121,10.1016/j.sciaf.2025.e02646,"Irrigation water quality indices (SAR, Na%, MAR, KR, SSP, PS)",index_recovery,index_recovery,index_recovery,no,no,no,high
+122,10.1016/j.jenvman.2023.118782,Groundwater nitrate concentration,genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+128,10.1007/s11356-021-18174-y,Groundwater nitrate concentration,genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+133,10.2166/wst.2023.231,Arsenic contamination class (high/low),hydrochem_association,hydrochem_association,hydrochem_association,no,no,no,high
+134,10.1016/j.gsd.2026.101612,"Groundwater level and quality parameters (pH, EC, TDS, Ca, Mg, TH, HCO3, Cl)",genuine_mapping,genuine_mapping,genuine_mapping,yes,yes,yes,high
+138,10.1016/j.jhydrol.2025.134189,Groundwater nitrate concentration and contamination probability,genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+141,10.1016/j.gsd.2024.101345,Groundwater vulnerability to nitrate pollution,genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+146,10.1007/s13201-024-02320-1,Binary groundwater nitrate contamination (>37.5 mg/L),genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+148,10.3390/w18060710,Nitrate concentration,hydrochem_association,hydrochem_association,hydrochem_association,no,no,no,high
+152,10.1016/j.asej.2025.103775,Groundwater salinity,hydrochem_association,hydrochem_association,hydrochem_association,no,no,no,high
+158,10.1016/j.ejrh.2026.103439,Groundwater salinity intrusion hazard (EC > 3000 µS/cm),genuine_mapping,genuine_mapping,genuine_mapping,yes,yes,yes,high
+163,10.1016/j.heliyon.2024.e27867,Groundwater nitrate concentration,genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+176,10.1016/j.chemolab.2022.104509,Uranium concentration,hydrochem_association,hydrochem_association,hydrochem_association,no,no,no,high
+181,10.1016/j.scitotenv.2023.165511,Probability of high-arsenic groundwater exceeding 10 μg/L,mixed,mixed,mixed,no,no,no,high
+182,10.1016/j.chemosphere.2022.137623,Dissolved total phosphorus (DTP) concentration in shallow groundwater,mixed,mixed,mixed,no,no,no,high
+187,10.1016/j.ejrh.2025.102664,Total dissolved solids (TDS) and salinity class,genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+189,10.1016/j.jhydrol.2023.129985,Binary occurrence of high arsenic groundwater (>10 μg/L),genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+194,10.1007/s11356-022-24328-3,elevated groundwater fluoride >1.5 mg/L,genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+196,10.1016/j.gsd.2023.101056,"Groundwater major ions (Ca, Mg, Na, K, HCO3, Cl, SO4)",hydrochem_association,hydrochem_association,hydrochem_association,no,no,no,high
+198,10.1016/j.jenvman.2025.124592,Salinity levels or seawater intrusion at monitoring locations,unclear,unclear,unclear,cannot_tell,cannot_tell,cannot_tell,high
+200,10.1016/j.agwat.2026.110372,Groundwater nitrate concentration,mixed,mixed,mixed,no,no,no,high
+202,10.1016/j.envres.2023.117769,Groundwater vulnerability class based on nitrate concentration,genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+204,10.1016/j.heliyon.2024.e28527,Arithmetic Water Quality Index (WQI),genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+207,10.1016/j.jece.2025.120934,Principal-component-weighted irrigation water quality index (PCIWQI),index_recovery,index_recovery,index_recovery,no,no,no,high
+209,10.1016/j.agwat.2021.107423,"Total dissolved solids, potential salinity, and sodium adsorption ratio",hydrochem_association,hydrochem_association,hydrochem_association,no,no,no,high
+211,10.1016/j.jenvman.2024.121269,Water Quality Index (WQI) and Irrigation Water Quality Index (IWQI),mixed,mixed,mixed,no,no,no,high
+214,10.1016/j.jenvman.2026.129953,Entropy Water Quality Index (EWQI) and Irrigation Water Quality Index (IWQI),index_recovery,index_recovery,index_recovery,yes,no,yes,high
+222,10.1016/j.watres.2024.121848,Binary probability of high arsenic and fluoride in shallow groundwater,genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+225,10.3389/fsoil.2024.1407502,Groundwater fluoride concentration,hydrochem_association,hydrochem_association,hydrochem_association,no,no,no,high
+229,10.1007/s11069-023-06387-y,Groundwater nitrate concentration,genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+234,10.2166/wrd.2023.050,Groundwater salinity and groundwater levels,unclear,unclear,unclear,cannot_tell,cannot_tell,cannot_tell,high
+238,10.1016/j.jhazmat.2026.142383,Groundwater arsenic and fluoride exceedance and their co-occurrence,genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+240,10.1016/j.jconhyd.2024.104300,Groundwater nitrate pollution occurrence probability,genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+245,10.1016/j.apgeochem.2022.105349,Groundwater phosphorus concentration,hydrochem_association,hydrochem_association,hydrochem_association,no,no,no,high
+249,10.1016/j.compag.2025.109932,Irrigation Water Quality Index (IWQI),index_recovery,index_recovery,index_recovery,no,no,no,high
+257,10.1016/j.jclepro.2024.141152,Groundwater potential (well yield class) and nitrate concentration,genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+260,10.1016/j.envpol.2022.119208,"Intrinsic, specific, and total aquifer vulnerability indices (IVI, SVI, TVI)",index_recovery,index_recovery,index_recovery,no,no,no,high
+261,10.1016/j.ecoinf.2024.102647,"Groundwater salinity hazard, vulnerability, and risk",genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+262,10.1111/gwat.70072,Hydrochemical facies (HCFs) / major-ion water types,genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+263,10.1007/s41748-024-00518-6,Conditioned Vulnerability Index (CVI) based on electrical conductivity,index_recovery,index_recovery,index_recovery,no,no,no,high
+265,10.1016/j.apgeochem.2024.106000,Binary classification of groundwater fluoride exceeding 1.5 mg/L,mixed,mixed,mixed,no,no,no,high
+266,10.1016/j.aej.2026.03.010,Groundwater salinity,hydrochem_association,hydrochem_association,hydrochem_association,no,no,no,high
+269,10.1016/j.pce.2026.104334,Entropy-based groundwater quality index (EGWQI) categories,index_recovery,index_recovery,index_recovery,no,no,no,high
+272,10.1016/j.chemosphere.2021.133388,shallow groundwater nitrate concentration,genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+275,10.1016/j.jclepro.2022.131847,Nitrate concentration in groundwater,genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+278,10.1016/j.sna.2025.117307,Arsenic concentration,hydrochem_association,hydrochem_association,hydrochem_association,no,no,no,high
+280,10.1016/j.jhydrol.2023.129356,Groundwater NO3-N concentration,mixed,mixed,mixed,no,no,no,high
+281,10.1021/acs.est.3c06525,Elevated groundwater salinity (EC > 2000 μS/cm),genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+282,10.1007/s11356-023-25886-w,Groundwater fluoride contamination class,hydrochem_association,hydrochem_association,hydrochem_association,no,no,no,high
+287,10.1038/s41598-026-41534-y,Groundwater Quality Index (GQI),index_recovery,index_recovery,index_recovery,no,no,no,high
+300,10.1029/2023WR035278,Spatiotemporal contaminant concentration and groundwater drawdown,mixed,mixed,mixed,no,no,no,high
+303,10.1016/j.scitotenv.2022.155131,Probability of high groundwater manganese and iron concentrations,genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+304,10.1016/j.gsd.2023.100955,"1,2,3-trichloropropane (TCP) concentration",genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+307,10.1021/acs.est.1c08682,"Probability of geogenic contaminated groundwater (high arsenic, fluoride, or iodine)",mixed,mixed,mixed,no,no,no,high
+312,10.1016/j.gsd.2023.101049,Groundwater Quality Index (GWQI) score,index_recovery,index_recovery,index_recovery,no,no,no,high
+314,10.1016/j.gsd.2024.101336,Water Quality Index (WQI),index_recovery,index_recovery,index_recovery,no,no,no,high
+320,10.1016/j.gsd.2024.101272,Water Quality Index (WQI) and Irrigation Water Quality Index (IWQI),index_recovery,index_recovery,index_recovery,no,no,no,high
+326,10.1007/s10653-026-03008-y,Nitrate (NO3-) concentration and pollution class,hydrochem_association,hydrochem_association,hydrochem_association,no,no,no,high
+327,10.1016/j.jhazmat.2025.137185,Nitrate concentration and contamination class,mixed,mixed,mixed,no,no,no,high
+330,10.1016/j.watres.2024.122404,"Groundwater salinity indicators (Cl-, pH, HCO3-)",genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+333,10.1007/s11004-024-10163-4,Groundwater nitrate concentration,genuine_mapping,genuine_mapping,genuine_mapping,no,yes,no,high
+334,10.1021/acsenvironau.2c00042,Groundwater nitrate pollution risk (probability of exceeding 45 mg/L),genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+338,10.1016/j.jenvman.2025.124321,groundwater nitrate concentration,genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+340,10.1016/j.jhazmat.2024.136050,Water Quality Index (RMS-WQI and WQM-WQI),index_recovery,index_recovery,index_recovery,no,no,no,high
+342,10.1016/j.jhydrol.2022.127933,High arsenic groundwater occurrence (As > 10 μg/L),genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+347,10.1016/j.envint.2025.109435,"Groundwater arsenic concentration (total As, As(III), As(V))",mixed,mixed,mixed,no,no,no,high
+349,10.1016/j.ejrh.2025.102867,Groundwater nitrate nitrogen (NO3-N) concentration,genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+351,10.1016/j.envint.2026.110049,Groundwater arsenic exceedance (>10 µg/L),genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+352,10.1016/j.jclepro.2022.130900,Groundwater nitrate concentration,genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+356,10.1016/j.jhazmat.2026.141566,Ni and Mn concentrations,mixed,mixed,mixed,no,no,no,high
+361,10.1016/j.envint.2023.107925,Groundwater salinity (EC) exceeding thresholds,genuine_mapping,genuine_mapping,genuine_mapping,yes,yes,yes,high
+366,10.1016/j.envres.2026.124226,Groundwater total nitrogen (TN) concentration,genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+368,10.1021/acs.est.4c12125,Groundwater arsenic (As) concentration,mixed,mixed,mixed,no,no,no,high
+371,10.1016/j.ecoinf.2023.102093,"Irrigation water quality indices (SSP, SAR, MH, KR)",index_recovery,index_recovery,index_recovery,no,no,no,high
+373,10.1016/j.scitotenv.2023.167570,Hexavalent chromium (Cr6+) concentration in groundwater,genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+379,10.1038/s43247-025-02016-7,groundwater nitrate concentrations,mixed,mixed,mixed,no,no,no,high
+380,10.1016/j.ejrh.2026.103516,Water Pollution Index (WPI),index_recovery,index_recovery,index_recovery,no,no,no,high
+383,10.1016/j.scitotenv.2022.153058,Probability of groundwater arsenic concentration exceeding 10 μg/L,genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+384,10.1016/j.envres.2023.116911,Groundwater nitrate concentration,mixed,mixed,mixed,no,no,no,high
+385,10.1016/j.jenvman.2023.119896,Groundwater Total Dissolved Solids (TDS),hydrochem_association,hydrochem_association,hydrochem_association,no,no,no,high
+392,10.1016/j.watres.2025.123535,"Dissolved-phase NAPL concentrations (BEX, Naph, NVDOC)",mixed,hydrochem_association,mixed,no,no,no,high
+393,10.1016/j.jconhyd.2024.104480,Normalized entropy coastal water quality index (ECWQIn),index_recovery,index_recovery,index_recovery,no,no,no,high
+400,10.1016/j.ejrh.2026.103461,Groundwater salinity,hydrochem_association,hydrochem_association,hydrochem_association,no,no,no,high
+407,10.1007/s10653-024-02177-y,Fluoride contamination (presence/absence),hydrochem_association,hydrochem_association,hydrochem_association,no,no,no,high
+411,10.1016/j.envint.2025.109711,Probability of groundwater arsenic exceeding 10 μg/L,genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+418,10.1021/acs.est.4c10318,Probability of groundwater sulfate exceeding 250 mg/L,genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+424,10.1016/j.uclim.2023.101458,Water quality index (WQI) and water quality state,index_recovery,index_recovery,index_recovery,no,no,no,high
+428,10.1016/j.scitotenv.2024.174508,Groundwater nitrate concentration classes and exceedance risk,genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+432,10.1007/s13146-026-01297-z,Groundwater dissolved inorganic carbon (DIC) concentration,genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+437,10.1016/j.psep.2024.02.041,Nitrate concentration,hydrochem_association,hydrochem_association,hydrochem_association,no,no,no,high
+438,10.1016/j.scitotenv.2024.176144,Dissolved inorganic nitrogen (DIN) concentration,genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+442,10.1021/acsestwater.2c00263,Binary exceedance of groundwater arsenic concentration > 10 μg/L,genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+443,10.1080/19475705.2025.2487816,Binary groundwater quality class (permissible vs. impermissible),genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+448,10.1088/1748-9326/acea34,groundwater nitrate-N concentration and mass accumulation,genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+451,10.1016/j.ecoenv.2023.115485,Groundwater Quality Index (GQI) grades,index_recovery,index_recovery,index_recovery,no,no,no,high
+453,10.1007/s13201-026-02870-6,Coliform and E. coli concentrations,mixed,mixed,mixed,no,no,no,high
+469,10.1007/s10653-025-02644-0,"Heavy metal pollution indices (HPI, HEI, Cd)",index_recovery,index_recovery,index_recovery,no,no,no,high
+477,10.1016/j.scitotenv.2023.164342,groundwater nitrate concentration,mixed,mixed,mixed,no,no,no,high
+478,10.1007/s11356-023-26764-1,Total dissolved solids (TDS) concentration,genuine_mapping,mixed,mixed,no,no,no,high
+479,10.1016/j.jes.2021.07.005,Groundwater fluoride concentration exceeding 1.5 mg/L,genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+480,10.1016/j.gsd.2024.101241,Uranium concentration in groundwater (binary classes based on permissible limits),genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+484,10.1016/j.scitotenv.2022.156058,Probability of groundwater fluoride exceeding 1.5 mg/L,genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+488,10.1016/j.jenvman.2024.122237,Probability of groundwater arsenic exceeding 10 or 50 μg/L,genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+495,10.1016/j.envsoft.2025.106626,Groundwater nitrate concentration,genuine_mapping,genuine_mapping,genuine_mapping,yes,yes,yes,high
+498,10.1016/j.enceco.2025.02.012,Total hardness (TH),hydrochem_association,hydrochem_association,hydrochem_association,no,no,no,high
+501,10.1016/j.watres.2025.125073,Nitrate concentration and its rate of increase in surface and groundwater,mixed,mixed,mixed,no,no,no,high
+505,10.1016/j.apgeochem.2026.106803,Concentrations of 11 groundwater ions and total hardness,mixed,mixed,mixed,yes,yes,yes,high
+506,10.1021/acsestwater.3c00185,"1,4-dioxane concentration, contamination duration, and contamination levels",hydrochem_association,hydrochem_association,hydrochem_association,no,no,no,high
+508,10.1016/j.marpolbul.2023.114618,Arsenic and nitrate concentration and vulnerability,hydrochem_association,hydrochem_association,hydrochem_association,no,no,no,high
+511,10.1016/j.gsd.2025.101517,Groundwater fluoride concentration,mixed,mixed,mixed,no,no,no,high
+518,10.1038/s41598-025-30122-1,Groundwater Quality Index (GWQI),index_recovery,index_recovery,index_recovery,no,yes,no,high
+519,10.1021/acsestwater.3c00134,Binary occurrence of total PFAS (>70 ng/L) and 35 individual PFAS (>2 ng/L),mixed,mixed,mixed,no,no,no,high
+522,10.1029/2025GH001666,Groundwater arsenic concentration exceeding 10 μg/L,genuine_mapping,genuine_mapping,genuine_mapping,yes,no,yes,high
+525,10.1021/acs.est.1c07440,Groundwater table elevation and tritium concentrations,mixed,mixed,mixed,no,yes,no,high
+529,10.1016/j.scitotenv.2023.164249,Groundwater nitrate concentration,genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high
+531,10.1007/s42452-026-08643-9,Electrical conductivity (EC),hydrochem_association,hydrochem_association,hydrochem_association,no,no,no,high
+532,10.3390/toxics10020095,Heavy metal concentrations,hydrochem_association,hydrochem_association,hydrochem_association,no,no,no,high
+537,10.1016/j.watres.2022.118083,Probability of groundwater fluoride exceeding 1.0 mg/L,genuine_mapping,genuine_mapping,genuine_mapping,yes,yes,yes,high
+541,10.1016/j.eti.2023.103234,Groundwater Quality Index (GWQI),index_recovery,index_recovery,index_recovery,no,no,no,high
+542,10.1021/acs.est.3c00348,Probability of groundwater PFOA exceeding 35 ppt,genuine_mapping,genuine_mapping,genuine_mapping,no,no,no,high

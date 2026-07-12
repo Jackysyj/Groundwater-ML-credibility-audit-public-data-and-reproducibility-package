@@ -1,0 +1,16 @@
+evidence_block,dataset,source_identifier,raw_data,released_material,provenance_status,license_or_release_note
+corpus,Web of Science researcher-screened corpus,DOI-level release table,not redistributed,derived labels included,verified,"Publisher full texts, WoS export and JCR fields are excluded"
+spatial,USGS nitrate,10.1016/j.scitotenv.2021.151065; data 10.5066/P9IPKWFL,not redistributed,fold results included,verified,Consult source record for data terms
+spatial,USGS arsenic,10.1021/acs.est.0c05239,not redistributed,fold results included,verified,Consult source record for data terms
+spatial,Global fluoride,10.1038/s41467-022-31940-x; data 10.25678/0006GQ,not redistributed,fold results included,verified,Consult source record for data terms
+spatial,Assam arsenic,10.1029/2021GH000585,not redistributed,fold results included,verified,Consult HydroShare/source record for data terms
+spatial,Mississippi Embayment salinity,10.5066/P9WBFR1T,not redistributed,fold results included,verified,USGS source; consult source record
+temporal,GEMS-GER,10.5194/essd-18-77-2026; data 10.5281/zenodo.15530171,not redistributed,unit-level scores included,verified,Consult Zenodo license
+temporal,North China Plain,10.6084/m9.figshare.27004054,not redistributed,unit-level scores included,verified,Consult Figshare license
+temporal,GROW,10.1038/s41597-026-06966-1; data 10.5281/zenodo.15149480,not redistributed,country-level scores included,verified,Source is CC BY-NC-SA 4.0; raw data excluded
+exogenous,CAMELS-GB groundwater,10.5285/9a46d428-958f-4ac1-86eb-94eee70c0955; 10.5194/essd-12-2459-2020,not redistributed,aggregate scores included,verified,Consult EIDC source terms
+exogenous,FrenchPiezo,data 10.5281/zenodo.7193812,not redistributed,aggregate scores included,verified,CC BY 4.0; exact companion-file checksum verified; raw data excluded
+exogenous,Swiss Groundwater Database,10.1038/s41597-026-07353-6; data 10.5281/zenodo.14260400 (v1.0),not redistributed,aggregate scores included,verified,CC BY 4.0; archive structure and published fingerprint verified; raw data excluded
+exogenous,Tuscany groundwater drought,data 10.5281/zenodo.17491496,not redistributed,aggregate scores included,verified,CC BY 4.0; exact archive checksum verified; credit SIR Toscana and ISPRA BIGBANG80; raw data excluded
+index,Weighted-arithmetic WQI,https://github.com/SunilVarma24/Water-Quality-Prediction,not redistributed,aggregate scores included,verified,MIT repository; raw demonstrator excluded
+index,CCME WQI demonstrator,10.1038/s41597-025-04715-4; data 10.6084/m9.figshare.27800394,not redistributed,aggregate scores included,verified,Source data CC BY 4.0; raw demonstrator excluded

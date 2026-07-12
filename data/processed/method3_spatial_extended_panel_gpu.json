@@ -1,0 +1,360 @@
+{
+  "status": "extended five-model panel over five external spatial data sources and six target tasks",
+  "generated_by": "scripts/method3_spatial_extended_panel_gpu.py",
+  "device": "cuda",
+  "nrounds": 400,
+  "epochs": 120,
+  "original_three_dataset_panel": "data/processed/method3_full_panel_gpu.json",
+  "new_targets": [
+    "assam_arsenic",
+    "mississippi_chloride",
+    "mississippi_specific_conductance"
+  ],
+  "summary": {
+    "n_target_tasks": 6,
+    "n_model_target_combinations": 30,
+    "all_gaps_positive": true,
+    "nonpositive_gap_rows": [],
+    "gap_range": [
+      0.10647765037797363,
+      0.7028491278171236
+    ],
+    "datasets": [
+      "arsenic",
+      "assam_arsenic",
+      "fluoride",
+      "mississippi_chloride",
+      "mississippi_specific_conductance",
+      "nitrate"
+    ]
+  },
+  "results": {
+    "nitrate": {
+      "task": "reg",
+      "metric": "R2",
+      "n_random_folds": 53,
+      "n_spatial_folds": 53,
+      "models": {
+        "linear": {
+          "family": "linear",
+          "random_median": 0.3036054130525989,
+          "spatial_median": 0.02727837347348505,
+          "gap": 0.27632703957911386,
+          "n_random": 53,
+          "n_spatial": 53
+        },
+        "random_forest_xgbrf_gpu": {
+          "family": "random_forest",
+          "random_median": 0.3729722951509975,
+          "spatial_median": 0.06646871372082364,
+          "gap": 0.30650358143017387,
+          "n_random": 53,
+          "n_spatial": 53
+        },
+        "xgboost_gpu": {
+          "family": "grad_boosting",
+          "random_median": 0.47042825531016386,
+          "spatial_median": 0.14972436588771365,
+          "gap": 0.3207038894224502,
+          "n_random": 53,
+          "n_spatial": 53
+        },
+        "hist_gbdt": {
+          "family": "hist_gbdt",
+          "random_median": 0.4667666344417909,
+          "spatial_median": 0.13052205284466967,
+          "gap": 0.33624458159712123,
+          "n_random": 53,
+          "n_spatial": 53
+        },
+        "mlp_torch_gpu": {
+          "family": "neural_net",
+          "random_median": 0.39644842132502334,
+          "spatial_median": 0.022220745158501587,
+          "gap": 0.37422767616652175,
+          "n_random": 53,
+          "n_spatial": 53
+        }
+      }
+    },
+    "arsenic": {
+      "task": "clf",
+      "metric": "AUC",
+      "n_random_folds": 13,
+      "n_spatial_folds": 13,
+      "models": {
+        "linear": {
+          "family": "linear",
+          "random_median": 0.7658983598409543,
+          "spatial_median": 0.6594207094629807,
+          "gap": 0.10647765037797363,
+          "n_random": 13,
+          "n_spatial": 13
+        },
+        "random_forest_xgbrf_gpu": {
+          "family": "random_forest",
+          "random_median": 0.8306870877617443,
+          "spatial_median": 0.6564038125238862,
+          "gap": 0.17428327523785803,
+          "n_random": 13,
+          "n_spatial": 13
+        },
+        "xgboost_gpu": {
+          "family": "grad_boosting",
+          "random_median": 0.8693759284590155,
+          "spatial_median": 0.6262833376959545,
+          "gap": 0.243092590763061,
+          "n_random": 13,
+          "n_spatial": 13
+        },
+        "hist_gbdt": {
+          "family": "hist_gbdt",
+          "random_median": 0.8603377237419791,
+          "spatial_median": 0.5846687801142036,
+          "gap": 0.2756689436277755,
+          "n_random": 13,
+          "n_spatial": 13
+        },
+        "mlp_torch_gpu": {
+          "family": "neural_net",
+          "random_median": 0.8426192842942346,
+          "spatial_median": 0.574066091954023,
+          "gap": 0.2685531923402116,
+          "n_random": 13,
+          "n_spatial": 13
+        }
+      }
+    },
+    "fluoride": {
+      "task": "clf",
+      "metric": "AUC",
+      "n_random_folds": 16,
+      "n_spatial_folds": 16,
+      "models": {
+        "linear": {
+          "family": "linear",
+          "random_median": 0.7572553342409141,
+          "spatial_median": 0.5928737071941639,
+          "gap": 0.1643816270467502,
+          "n_random": 16,
+          "n_spatial": 16
+        },
+        "random_forest_xgbrf_gpu": {
+          "family": "random_forest",
+          "random_median": 0.8399889479029606,
+          "spatial_median": 0.5743732409048266,
+          "gap": 0.2656157069981341,
+          "n_random": 16,
+          "n_spatial": 16
+        },
+        "xgboost_gpu": {
+          "family": "grad_boosting",
+          "random_median": 0.861819782800582,
+          "spatial_median": 0.5339921523763649,
+          "gap": 0.32782763042421714,
+          "n_random": 16,
+          "n_spatial": 16
+        },
+        "hist_gbdt": {
+          "family": "hist_gbdt",
+          "random_median": 0.8615416807672468,
+          "spatial_median": 0.5673119971120357,
+          "gap": 0.29422968365521107,
+          "n_random": 16,
+          "n_spatial": 16
+        },
+        "mlp_torch_gpu": {
+          "family": "neural_net",
+          "random_median": 0.8521603262166277,
+          "spatial_median": 0.518419883007398,
+          "gap": 0.3337404432092297,
+          "n_random": 16,
+          "n_spatial": 16
+        }
+      }
+    },
+    "assam_arsenic": {
+      "task": "clf",
+      "metric": "AUC",
+      "source": "HydroShare Assam Brahmaputra arsenic",
+      "target": "As_class",
+      "n_features": 26,
+      "n_random_folds": 14,
+      "n_spatial_folds": 14,
+      "models": {
+        "linear": {
+          "family": "linear",
+          "random_median": 0.8674436794937666,
+          "spatial_median": 0.6245002939447384,
+          "gap": 0.24294338554902817,
+          "n_random": 14,
+          "n_spatial": 14,
+          "authors_original_family": false,
+          "warning_nonpositive_gap": false
+        },
+        "random_forest_xgbrf_gpu": {
+          "family": "random_forest",
+          "random_median": 0.8933677927340347,
+          "spatial_median": 0.6027183600713012,
+          "gap": 0.29064943266273346,
+          "n_random": 14,
+          "n_spatial": 14,
+          "authors_original_family": true,
+          "warning_nonpositive_gap": false
+        },
+        "xgboost_gpu": {
+          "family": "grad_boosting",
+          "random_median": 0.9024020521242306,
+          "spatial_median": 0.6274492420433029,
+          "gap": 0.27495281008092776,
+          "n_random": 14,
+          "n_spatial": 14,
+          "authors_original_family": false,
+          "warning_nonpositive_gap": false
+        },
+        "hist_gbdt": {
+          "family": "hist_gbdt",
+          "random_median": 0.8982990786676115,
+          "spatial_median": 0.5891778825932825,
+          "gap": 0.309121196074329,
+          "n_random": 14,
+          "n_spatial": 14,
+          "authors_original_family": false,
+          "warning_nonpositive_gap": false
+        },
+        "mlp_torch_gpu": {
+          "family": "neural_net",
+          "random_median": 0.8914352137866349,
+          "spatial_median": 0.5954020236078982,
+          "gap": 0.29603319017873675,
+          "n_random": 14,
+          "n_spatial": 14,
+          "authors_original_family": false,
+          "warning_nonpositive_gap": false
+        }
+      }
+    },
+    "mississippi_specific_conductance": {
+      "task": "reg",
+      "metric": "R2",
+      "source": "USGS Mississippi Embayment salinity",
+      "target": "__target",
+      "n_features": 58,
+      "n_random_folds": 21,
+      "n_spatial_folds": 21,
+      "models": {
+        "linear": {
+          "family": "linear",
+          "random_median": 0.5461084474366653,
+          "spatial_median": -0.07744843144348557,
+          "gap": 0.6235568788801509,
+          "n_random": 21,
+          "n_spatial": 21,
+          "authors_original_family": false,
+          "warning_nonpositive_gap": false
+        },
+        "random_forest_xgbrf_gpu": {
+          "family": "random_forest",
+          "random_median": 0.6712497948749976,
+          "spatial_median": 0.025978054086404856,
+          "gap": 0.6452717407885927,
+          "n_random": 21,
+          "n_spatial": 21,
+          "authors_original_family": false,
+          "warning_nonpositive_gap": false
+        },
+        "xgboost_gpu": {
+          "family": "grad_boosting",
+          "random_median": 0.7566559333299746,
+          "spatial_median": 0.09753881854639168,
+          "gap": 0.6591171147835829,
+          "n_random": 21,
+          "n_spatial": 21,
+          "authors_original_family": true,
+          "warning_nonpositive_gap": false
+        },
+        "hist_gbdt": {
+          "family": "hist_gbdt",
+          "random_median": 0.7564974591050603,
+          "spatial_median": 0.1366686992321986,
+          "gap": 0.6198287598728617,
+          "n_random": 21,
+          "n_spatial": 21,
+          "authors_original_family": false,
+          "warning_nonpositive_gap": false
+        },
+        "mlp_torch_gpu": {
+          "family": "neural_net",
+          "random_median": 0.6630821665104373,
+          "spatial_median": 0.017884463202889278,
+          "gap": 0.645197703307548,
+          "n_random": 21,
+          "n_spatial": 21,
+          "authors_original_family": false,
+          "warning_nonpositive_gap": false
+        }
+      }
+    },
+    "mississippi_chloride": {
+      "task": "reg",
+      "metric": "R2",
+      "source": "USGS Mississippi Embayment salinity",
+      "target": "__target",
+      "n_features": 47,
+      "n_random_folds": 21,
+      "n_spatial_folds": 21,
+      "models": {
+        "linear": {
+          "family": "linear",
+          "random_median": 0.484272451924024,
+          "spatial_median": -0.1346629569788711,
+          "gap": 0.6189354089028951,
+          "n_random": 21,
+          "n_spatial": 21,
+          "authors_original_family": false,
+          "warning_nonpositive_gap": false
+        },
+        "random_forest_xgbrf_gpu": {
+          "family": "random_forest",
+          "random_median": 0.6586255274473765,
+          "spatial_median": -0.015802480250451945,
+          "gap": 0.6744280076978284,
+          "n_random": 21,
+          "n_spatial": 21,
+          "authors_original_family": false,
+          "warning_nonpositive_gap": false
+        },
+        "xgboost_gpu": {
+          "family": "grad_boosting",
+          "random_median": 0.7333026265678514,
+          "spatial_median": 0.03045349875072778,
+          "gap": 0.7028491278171236,
+          "n_random": 21,
+          "n_spatial": 21,
+          "authors_original_family": true,
+          "warning_nonpositive_gap": false
+        },
+        "hist_gbdt": {
+          "family": "hist_gbdt",
+          "random_median": 0.7411561612543789,
+          "spatial_median": 0.10302669052042923,
+          "gap": 0.6381294707339497,
+          "n_random": 21,
+          "n_spatial": 21,
+          "authors_original_family": false,
+          "warning_nonpositive_gap": false
+        },
+        "mlp_torch_gpu": {
+          "family": "neural_net",
+          "random_median": 0.6971934994363516,
+          "spatial_median": 0.008114379843498165,
+          "gap": 0.6890791195928534,
+          "n_random": 21,
+          "n_spatial": 21,
+          "authors_original_family": false,
+          "warning_nonpositive_gap": false
+        }
+      }
+    }
+  }
+}

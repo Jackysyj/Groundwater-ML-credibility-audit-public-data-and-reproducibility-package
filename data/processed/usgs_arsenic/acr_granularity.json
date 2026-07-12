@@ -1,0 +1,25 @@
+{
+  "dataset": "Lombard 2021 USGS arsenic, ACR granularity sensitivity",
+  "regime": "standard random k-fold (interpolative)",
+  "n_levelIII": 13,
+  "n_levelII": 8,
+  "granularities": {
+    "levelIII_fine": {
+      "region_col": "eco",
+      "n_regions": 13,
+      "xgb_median_auc": 0.8681,
+      "region_mean_median_auc": 0.6673,
+      "acr_pct": 45.5,
+      "n_folds": 13
+    },
+    "levelII_coarse": {
+      "region_col": "eco_l2",
+      "n_regions": 8,
+      "xgb_median_auc": 0.8622,
+      "region_mean_median_auc": 0.6671,
+      "acr_pct": 46.1,
+      "n_folds": 8
+    }
+  },
+  "reading": "Categorical-baseline ACR is essentially GRANULARITY-INVARIANT: Level-III (fine, 13 regions) ACR 45.5% vs Level-II (coarse, 8 regions) ACR 46.1% (<1-pt difference). This REFUTES the naive hypothesis that finer regions raise ACR. Arsenic's lower ACR vs nitrate/fluoride distance-IDW (~80%) is therefore intrinsic to the baseline FORM, not partition resolution: a categorical region-mean discards within-region distance decay that a continuous IDW kernel retains, so refining/coarsening the partition cannot recover it. The caveat becomes a result: arsenic's ~45% is a valid categorical-form value (the floor a coordinate-free dataset can achieve), not an underestimate."
+}

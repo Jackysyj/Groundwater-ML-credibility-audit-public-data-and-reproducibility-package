@@ -1,0 +1,25 @@
+{
+  "status": "doi_canonical_full_schema_qc",
+  "n_unique_papers": 99,
+  "n_fields_per_paper": 15,
+  "field_matches": 1408,
+  "field_total": 1485,
+  "field_agreement_pct": 94.8,
+  "headline_field_confusion": {
+    "reports_spatial_holdout": {
+      "agreement_n": 98,
+      "n": 99,
+      "agreement_pct": 99.0,
+      "false_positive": 1,
+      "false_negative": 0
+    },
+    "reports_persistence_baseline": {
+      "agreement_n": 99,
+      "n": 99,
+      "agreement_pct": 100.0,
+      "false_positive": 0,
+      "false_negative": 0
+    }
+  },
+  "duplicate_doi_groups": 1
+}

@@ -1,0 +1,259 @@
+{
+  "design": "Chronological rolling-origin with a multi-horizon forecast curve: train on the first 80% of the timeline, test on the last 19%. z-score fit on train months only (no future leakage). For information cutoff index i (last observed = z[i]): features = the N most recent observed values ending AT z[i]; target = z[i+h]; persistence = z[i] (SAME cutoff as ML, fair at every h); seasonal = same calendar month one year earlier. Reports ML (RandomForest, 3 lags), persistence, and seasonal persistence at horizons h=[1, 3, 6, 12] steps ahead.",
+  "fairness_note": "Fixes a one-step feature/target mis-alignment in the prior version where persistence saw one month the ML features did not; ML and persistence now share the same information cutoff at every horizon.",
+  "model": "RandomForestRegressor(n_estimators=200, max_depth=6)",
+  "n_lags": 3,
+  "cutoff_quantile": 0.8,
+  "horizons": [
+    1,
+    3,
+    6,
+    12
+  ],
+  "gems_de": {
+    "cutoff_year_month": 201607,
+    "horizons": {
+      "h1": {
+        "horizon": 1,
+        "n_train_rows": 973902,
+        "n_test_rows": 246513,
+        "n_test_wells": 3207,
+        "pooled": {
+          "ml_r2": 0.7787,
+          "persistence_r2": 0.7935,
+          "seasonal_persistence_r2": 0.0713
+        },
+        "per_well_median": {
+          "ml_r2": 0.7793,
+          "persistence_r2": 0.7585,
+          "seasonal_persistence_r2": -0.4403,
+          "n_wells": 3207
+        },
+        "persistence_beats_ml_pooled": true,
+        "persistence_beats_ml_well_pct": 34.3,
+        "persistence_beats_ml_well_n": 1100
+      },
+      "h3": {
+        "horizon": 3,
+        "n_train_rows": 967488,
+        "n_test_rows": 246513,
+        "n_test_wells": 3207,
+        "pooled": {
+          "ml_r2": 0.3038,
+          "persistence_r2": 0.2415,
+          "seasonal_persistence_r2": 0.0713
+        },
+        "per_well_median": {
+          "ml_r2": -0.0406,
+          "persistence_r2": -0.1583,
+          "seasonal_persistence_r2": -0.4403,
+          "n_wells": 3207
+        },
+        "persistence_beats_ml_pooled": false,
+        "persistence_beats_ml_well_pct": 38.7
+      },
+      "h6": {
+        "horizon": 6,
+        "n_train_rows": 957867,
+        "n_test_rows": 246513,
+        "n_test_wells": 3207,
+        "pooled": {
+          "ml_r2": -0.014,
+          "persistence_r2": -0.3186,
+          "seasonal_persistence_r2": 0.0713
+        },
+        "per_well_median": {
+          "ml_r2": -0.4263,
+          "persistence_r2": -1.1717,
+          "seasonal_persistence_r2": -0.4403,
+          "n_wells": 3207
+        },
+        "persistence_beats_ml_pooled": false,
+        "persistence_beats_ml_well_pct": 33.5
+      },
+      "h12": {
+        "horizon": 12,
+        "n_train_rows": 938625,
+        "n_test_rows": 246513,
+        "n_test_wells": 3207,
+        "pooled": {
+          "ml_r2": 0.1204,
+          "persistence_r2": 0.0703,
+          "seasonal_persistence_r2": 0.0713
+        },
+        "per_well_median": {
+          "ml_r2": -0.2822,
+          "persistence_r2": -0.4424,
+          "seasonal_persistence_r2": -0.4403,
+          "n_wells": 3207
+        },
+        "persistence_beats_ml_pooled": false,
+        "persistence_beats_ml_well_pct": 34.7
+      }
+    }
+  },
+  "ncp_cn": {
+    "cutoff_year_month": 201507,
+    "horizons": {
+      "h1": {
+        "horizon": 1,
+        "n_train_rows": 124647,
+        "n_test_rows": 36258,
+        "n_test_wells": 651,
+        "pooled": {
+          "ml_r2": 0.6568,
+          "persistence_r2": 0.8475,
+          "seasonal_persistence_r2": 0.5092
+        },
+        "per_well_median": {
+          "ml_r2": 0.4243,
+          "persistence_r2": 0.6041,
+          "seasonal_persistence_r2": -0.2216,
+          "n_wells": 640
+        },
+        "persistence_beats_ml_pooled": true,
+        "persistence_beats_ml_well_pct": 58.3,
+        "persistence_beats_ml_well_n": 373
+      },
+      "h3": {
+        "horizon": 3,
+        "n_train_rows": 123043,
+        "n_test_rows": 36258,
+        "n_test_wells": 651,
+        "pooled": {
+          "ml_r2": 0.3768,
+          "persistence_r2": 0.6012,
+          "seasonal_persistence_r2": 0.5092
+        },
+        "per_well_median": {
+          "ml_r2": -0.398,
+          "persistence_r2": -0.2122,
+          "seasonal_persistence_r2": -0.2216,
+          "n_wells": 640
+        },
+        "persistence_beats_ml_pooled": true,
+        "persistence_beats_ml_well_pct": 52.8
+      },
+      "h6": {
+        "horizon": 6,
+        "n_train_rows": 120637,
+        "n_test_rows": 36258,
+        "n_test_wells": 651,
+        "pooled": {
+          "ml_r2": 0.132,
+          "persistence_r2": 0.4306,
+          "seasonal_persistence_r2": 0.5092
+        },
+        "per_well_median": {
+          "ml_r2": -0.7349,
+          "persistence_r2": -0.7182,
+          "seasonal_persistence_r2": -0.2216,
+          "n_wells": 640
+        },
+        "persistence_beats_ml_pooled": true,
+        "persistence_beats_ml_well_pct": 49.2
+      },
+      "h12": {
+        "horizon": 12,
+        "n_train_rows": 115825,
+        "n_test_rows": 36258,
+        "n_test_wells": 651,
+        "pooled": {
+          "ml_r2": 0.0398,
+          "persistence_r2": 0.4683,
+          "seasonal_persistence_r2": 0.5092
+        },
+        "per_well_median": {
+          "ml_r2": -0.5966,
+          "persistence_r2": -0.2726,
+          "seasonal_persistence_r2": -0.2216,
+          "n_wells": 640
+        },
+        "persistence_beats_ml_pooled": true,
+        "persistence_beats_ml_well_pct": 55.0
+      }
+    }
+  },
+  "grow_16": {
+    "cutoff_year_month": 200401,
+    "horizons": {
+      "h1": {
+        "horizon": 1,
+        "n_train_rows": 772873,
+        "n_test_rows": 448955,
+        "n_test_wells": 3021,
+        "pooled": {
+          "ml_r2": 0.0119,
+          "persistence_r2": -0.1866,
+          "seasonal_persistence_r2": -0.0204
+        },
+        "per_well_median": {
+          "ml_r2": 0.5623,
+          "persistence_r2": 0.7035,
+          "seasonal_persistence_r2": -0.1016,
+          "n_wells": 2990
+        },
+        "persistence_beats_ml_pooled": false,
+        "persistence_beats_ml_well_pct": 51.4,
+        "persistence_beats_ml_well_n": 1536
+      },
+      "h3": {
+        "horizon": 3,
+        "n_train_rows": 762069,
+        "n_test_rows": 448955,
+        "n_test_wells": 3021,
+        "pooled": {
+          "ml_r2": 0.0085,
+          "persistence_r2": -0.8613,
+          "seasonal_persistence_r2": -0.0204
+        },
+        "per_well_median": {
+          "ml_r2": -0.109,
+          "persistence_r2": -0.0327,
+          "seasonal_persistence_r2": -0.1016,
+          "n_wells": 2990
+        },
+        "persistence_beats_ml_pooled": false,
+        "persistence_beats_ml_well_pct": 49.0
+      },
+      "h6": {
+        "horizon": 6,
+        "n_train_rows": 745914,
+        "n_test_rows": 448904,
+        "n_test_wells": 3021,
+        "pooled": {
+          "ml_r2": 0.0034,
+          "persistence_r2": -0.019,
+          "seasonal_persistence_r2": -0.0204
+        },
+        "per_well_median": {
+          "ml_r2": -0.3473,
+          "persistence_r2": -0.6177,
+          "seasonal_persistence_r2": -0.1016,
+          "n_wells": 2990
+        },
+        "persistence_beats_ml_pooled": false,
+        "persistence_beats_ml_well_pct": 46.3
+      },
+      "h12": {
+        "horizon": 12,
+        "n_train_rows": 713862,
+        "n_test_rows": 448544,
+        "n_test_wells": 3021,
+        "pooled": {
+          "ml_r2": 0.0039,
+          "persistence_r2": -0.0201,
+          "seasonal_persistence_r2": -0.0204
+        },
+        "per_well_median": {
+          "ml_r2": -0.125,
+          "persistence_r2": -0.1235,
+          "seasonal_persistence_r2": -0.1018,
+          "n_wells": 2990
+        },
+        "persistence_beats_ml_pooled": false,
+        "persistence_beats_ml_well_pct": 45.9
+      }
+    }
+  }
+}

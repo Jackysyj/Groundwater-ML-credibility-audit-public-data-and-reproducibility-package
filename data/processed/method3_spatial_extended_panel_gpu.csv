@@ -1,0 +1,31 @@
+dataset,source,task,metric,model,family,random_median,spatial_median,gap,n_random,n_spatial,authors_original_family,warning_nonpositive_gap
+nitrate,original_method3_full_panel,reg,R2,linear,linear,0.3036054130525989,0.02727837347348505,0.27632703957911386,53,53,False,False
+nitrate,original_method3_full_panel,reg,R2,random_forest_xgbrf_gpu,random_forest,0.3729722951509975,0.06646871372082364,0.30650358143017387,53,53,False,False
+nitrate,original_method3_full_panel,reg,R2,xgboost_gpu,grad_boosting,0.47042825531016386,0.14972436588771365,0.3207038894224502,53,53,True,False
+nitrate,original_method3_full_panel,reg,R2,hist_gbdt,hist_gbdt,0.4667666344417909,0.13052205284466967,0.33624458159712123,53,53,False,False
+nitrate,original_method3_full_panel,reg,R2,mlp_torch_gpu,neural_net,0.39644842132502334,0.022220745158501587,0.37422767616652175,53,53,False,False
+arsenic,original_method3_full_panel,clf,AUC,linear,linear,0.7658983598409543,0.6594207094629807,0.10647765037797363,13,13,False,False
+arsenic,original_method3_full_panel,clf,AUC,random_forest_xgbrf_gpu,random_forest,0.8306870877617443,0.6564038125238862,0.17428327523785803,13,13,True,False
+arsenic,original_method3_full_panel,clf,AUC,xgboost_gpu,grad_boosting,0.8693759284590155,0.6262833376959545,0.243092590763061,13,13,False,False
+arsenic,original_method3_full_panel,clf,AUC,hist_gbdt,hist_gbdt,0.8603377237419791,0.5846687801142036,0.2756689436277755,13,13,False,False
+arsenic,original_method3_full_panel,clf,AUC,mlp_torch_gpu,neural_net,0.8426192842942346,0.574066091954023,0.2685531923402116,13,13,False,False
+fluoride,original_method3_full_panel,clf,AUC,linear,linear,0.7572553342409141,0.5928737071941639,0.1643816270467502,16,16,False,False
+fluoride,original_method3_full_panel,clf,AUC,random_forest_xgbrf_gpu,random_forest,0.8399889479029606,0.5743732409048266,0.2656157069981341,16,16,True,False
+fluoride,original_method3_full_panel,clf,AUC,xgboost_gpu,grad_boosting,0.861819782800582,0.5339921523763649,0.32782763042421714,16,16,False,False
+fluoride,original_method3_full_panel,clf,AUC,hist_gbdt,hist_gbdt,0.8615416807672468,0.5673119971120357,0.29422968365521107,16,16,False,False
+fluoride,original_method3_full_panel,clf,AUC,mlp_torch_gpu,neural_net,0.8521603262166277,0.518419883007398,0.3337404432092297,16,16,False,False
+assam_arsenic,HydroShare Assam Brahmaputra arsenic,clf,AUC,linear,linear,0.8674436794937666,0.6245002939447384,0.24294338554902817,14,14,False,False
+assam_arsenic,HydroShare Assam Brahmaputra arsenic,clf,AUC,random_forest_xgbrf_gpu,random_forest,0.8933677927340347,0.6027183600713012,0.29064943266273346,14,14,True,False
+assam_arsenic,HydroShare Assam Brahmaputra arsenic,clf,AUC,xgboost_gpu,grad_boosting,0.9024020521242306,0.6274492420433029,0.27495281008092776,14,14,False,False
+assam_arsenic,HydroShare Assam Brahmaputra arsenic,clf,AUC,hist_gbdt,hist_gbdt,0.8982990786676115,0.5891778825932825,0.309121196074329,14,14,False,False
+assam_arsenic,HydroShare Assam Brahmaputra arsenic,clf,AUC,mlp_torch_gpu,neural_net,0.8914352137866349,0.5954020236078982,0.29603319017873675,14,14,False,False
+mississippi_specific_conductance,USGS Mississippi Embayment salinity,reg,R2,linear,linear,0.5461084474366653,-0.07744843144348557,0.6235568788801509,21,21,False,False
+mississippi_specific_conductance,USGS Mississippi Embayment salinity,reg,R2,random_forest_xgbrf_gpu,random_forest,0.6712497948749976,0.025978054086404856,0.6452717407885927,21,21,False,False
+mississippi_specific_conductance,USGS Mississippi Embayment salinity,reg,R2,xgboost_gpu,grad_boosting,0.7566559333299746,0.09753881854639168,0.6591171147835829,21,21,True,False
+mississippi_specific_conductance,USGS Mississippi Embayment salinity,reg,R2,hist_gbdt,hist_gbdt,0.7564974591050603,0.1366686992321986,0.6198287598728617,21,21,False,False
+mississippi_specific_conductance,USGS Mississippi Embayment salinity,reg,R2,mlp_torch_gpu,neural_net,0.6630821665104373,0.017884463202889278,0.645197703307548,21,21,False,False
+mississippi_chloride,USGS Mississippi Embayment salinity,reg,R2,linear,linear,0.484272451924024,-0.1346629569788711,0.6189354089028951,21,21,False,False
+mississippi_chloride,USGS Mississippi Embayment salinity,reg,R2,random_forest_xgbrf_gpu,random_forest,0.6586255274473765,-0.015802480250451945,0.6744280076978284,21,21,False,False
+mississippi_chloride,USGS Mississippi Embayment salinity,reg,R2,xgboost_gpu,grad_boosting,0.7333026265678514,0.03045349875072778,0.7028491278171236,21,21,True,False
+mississippi_chloride,USGS Mississippi Embayment salinity,reg,R2,hist_gbdt,hist_gbdt,0.7411561612543789,0.10302669052042923,0.6381294707339497,21,21,False,False
+mississippi_chloride,USGS Mississippi Embayment salinity,reg,R2,mlp_torch_gpu,neural_net,0.6971934994363516,0.008114379843498165,0.6890791195928534,21,21,False,False
