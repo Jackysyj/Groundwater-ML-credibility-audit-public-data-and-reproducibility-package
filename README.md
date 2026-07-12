@@ -71,10 +71,10 @@ No raw third-party dataset is redistributed. Source identifiers and known licens
 
 ## Citation
 
-Until an archival DOI is assigned, cite the associated manuscript and this release as:
+Cite this release as:
 
-> Authors. Groundwater ML credibility audit: public data and reproducibility package. Version 0.1.0-rc1 (2026). DOI pending.
+> Authors. Groundwater ML credibility audit: public data and reproducibility package. Version 1.0.0 (2026). Zenodo. https://doi.org/10.5281/zenodo.21320216
 
 ## Contact and issues
 
-Author and contact metadata should be added to the archival repository record before deposit. Report data or code issues through the repository associated with the final DOI.
+Author and contact metadata are maintained on the archival record. Report data or code issues through the archival record at https://doi.org/10.5281/zenodo.21320216.
