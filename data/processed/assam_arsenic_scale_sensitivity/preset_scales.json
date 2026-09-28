@@ -1,0 +1,10 @@
+{
+  "scales_deg": [
+    0.1,
+    0.15,
+    0.2
+  ],
+  "main_scale_deg": 0.15,
+  "scale_unit": "longitude/latitude grid degrees used by the original script",
+  "selection_rule": "fixed before inspecting sensitivity results; all three scales reported"
+}

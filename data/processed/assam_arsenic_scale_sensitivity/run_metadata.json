@@ -1,0 +1,26 @@
+{
+  "data": "not redistributed: assam_as_points.csv",
+  "data_sha256": "251a77c3d549cf81392923bc9377271e9bc2aa106b36bb2cfee6adb27f8d9e35",
+  "script": "scripts/run_assam_scale_sensitivity.py",
+  "python": "3.11.12 (main, Apr  8 2025, 14:15:29) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "platform": "macOS-26.7-arm64-arm-64bit",
+  "xgboost_version": "2.1.4",
+  "historical_model_device": "cuda in original WSL script",
+  "rerun_model_device": "cpu",
+  "xgb_params": {
+    "booster": "gbtree",
+    "max_depth": 5,
+    "eta": 0.05,
+    "subsample": 0.7,
+    "colsample_bytree": 0.7,
+    "min_child_weight": 5,
+    "objective": "binary:logistic",
+    "eval_metric": "auc",
+    "tree_method": "hist",
+    "device": "cpu"
+  },
+  "num_boost_round": 500,
+  "seed": 42,
+  "baseline": "8-nearest-neighbour inverse-distance-weighted frequency; no fitted baseline model",
+  "note": "The released results are a supporting sensitivity analysis. The historical WSL run used CUDA; the recorded rerun used CPU execution on Apple Silicon. The input table is identified by checksum but is not redistributed."
+}

@@ -1,0 +1,35 @@
+{
+  "title": "Groundwater ML credibility audit: public data and reproducibility package",
+  "upload_type": "dataset",
+  "license": "cc-by-4.0",
+  "creators": [
+    {
+      "name": "Jiang, Siyuan",
+      "affiliation": "Lanzhou University"
+    },
+    {
+      "name": "Zhou, Chenran",
+      "affiliation": "Lanzhou University"
+    },
+    {
+      "name": "Yang, Ying",
+      "affiliation": "Lanzhou University"
+    },
+    {
+      "name": "Mao, Yaoru",
+      "affiliation": "Lanzhou University"
+    },
+    {
+      "name": "Cheng, Xiuwen",
+      "affiliation": "Lanzhou University"
+    }
+  ],
+  "description": "DOI-level audit labels, fold-level re-analysis inputs and outputs, analysis scripts and the source-provenance ledger for a credibility audit of groundwater machine learning studies. Scripts are MIT licensed; derived data and documentation are CC BY 4.0 (see LICENSES.md).",
+  "keywords": [
+    "groundwater",
+    "machine learning",
+    "validation",
+    "baseline",
+    "credibility audit"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "failures_in_saved_run": 0,
+  "notes": [
+    {
+      "scale_deg": 0.1,
+      "regime": "spatial_block",
+      "fold": "941_264",
+      "status": "skipped",
+      "reason": "single_outcome_class; ROC-AUC undefined",
+      "n_test": 45
+    },
+    {
+      "scale_deg": 0.1,
+      "regime": "all",
+      "status": "reported",
+      "reason": "spatial and random results complete; no additional scales run"
+    },
+    {
+      "scale_deg": 0.15,
+      "regime": "all",
+      "status": "reported",
+      "reason": "spatial and random results complete; no additional scales run"
+    },
+    {
+      "scale_deg": 0.2,
+      "regime": "all",
+      "status": "reported",
+      "reason": "spatial and random results complete; no additional scales run"
+    }
+  ],
+  "interval_correction": "Aligned increment interval with the difference-of-medians point statistic using saved fold scores; no model refit.",
+  "ratio_rule": "Undefined when model skill <= 0; near-floor ratios may be unstable."
+}

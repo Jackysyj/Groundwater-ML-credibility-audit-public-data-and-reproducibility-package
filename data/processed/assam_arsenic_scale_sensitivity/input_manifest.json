@@ -1,0 +1,48 @@
+{
+  "inputs": [
+    {
+      "path": "not redistributed: assam_as_points.csv",
+      "sha256": "251a77c3d549cf81392923bc9377271e9bc2aa106b36bb2cfee6adb27f8d9e35",
+      "rows": 2392,
+      "target": "As_class",
+      "features": [
+        "ts_soc",
+        "ts_silt",
+        "ts_sand",
+        "ts_ph",
+        "ts_clay",
+        "ts_cec",
+        "ts_bulkdensity",
+        "ss_soc",
+        "ss_silt",
+        "ss_sand",
+        "ss_ph",
+        "ss_clay",
+        "ss_cec",
+        "ss_bulkdensity",
+        "fluvisols",
+        "et0_yr",
+        "ai_et0",
+        "elevation",
+        "slope",
+        "precip",
+        "temp",
+        "distance_to_river",
+        "lulc",
+        "twi",
+        "ts_cf",
+        "ss_cf"
+      ],
+      "coordinates": [
+        "latitude",
+        "longitude"
+      ]
+    }
+  ],
+  "preset_scales": [
+    0.1,
+    0.15,
+    0.2
+  ],
+  "training_test_overlap": 0
+}

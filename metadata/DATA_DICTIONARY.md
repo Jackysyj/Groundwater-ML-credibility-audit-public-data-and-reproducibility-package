@@ -27,6 +27,7 @@ Paired automated (`llm_*`) and manual (`manual_*`) values plus field-level agree
 - `rolling_panel.csv`: learner results by dataset and forecast horizon under chronological evaluation.
 - `bootstrap_ci.csv`: percentile-bootstrap intervals for same-fold and rolling-origin summaries.
 - `truth_table.json`: flat manuscript-facing mirror used by Figures 1 and 4 and by plot annotations. It is generated from analysis outputs, not edited by hand.
+- `assam_arsenic_scale_sensitivity/`: fold-level and summary results for the prespecified 0.10°, 0.15° and 0.20° spatial grid widths. The input table is identified by checksum but is not redistributed.
 
 ## Missing values and score conventions
 

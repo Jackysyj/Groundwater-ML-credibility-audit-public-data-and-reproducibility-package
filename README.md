@@ -1,16 +1,16 @@
 # Groundwater ML credibility audit: public data and reproducibility package
 
-This release candidate supports the manuscript **Groundwater machine learning studies rarely report the validation and baselines their deployment claims require**. It contains the DOI-level literature-audit labels, manual-audit decisions without copyrighted full-text excerpts, fold/unit-level model and baseline scores, sensitivity summaries, figure inputs, and scripts needed to verify the principal reported quantities and redraw Figures 1-4.
+This release supports the manuscript **Groundwater machine learning studies rarely report the validation and baselines their deployment claims require**. It contains the DOI-level literature-audit labels, manual-audit decisions without copyrighted full-text excerpts, fold/unit-level model and baseline scores, the Assam spatial-scale sensitivity analysis, figure inputs, and scripts needed to verify the principal reported quantities and redraw Figures 1-4.
 
 ## Release status
 
-This is a deposition-ready **release candidate**, not the final archival record. Replace the citation placeholder after Zenodo or another repository assigns a DOI. Version-specific landing pages, cite-as records, licenses and retained-file fingerprints are verified for the French, Swiss and Tuscany exogenous-driver inputs.
+This is the version 1.2.0 public release corresponding to the current manuscript release. The concept DOI below is stable across subsequent archival versions. Version-specific landing pages, cite-as records, licenses and retained-file fingerprints are verified for the French, Swiss and Tuscany exogenous-driver inputs.
 
 ## What is included
 
 - `data/corpus/`: 532-paper DOI-level audit table; 99-paper full-schema audit; 154-paper double-blind water-quality audit; 179-paper researcher-verified water-level audit; manual-audit coverage ledger.
-- `data/processed/`: released truth mirror, seven-row autocorrelation-recovery (ACR) inputs/results, random-versus-spatial fold summaries, water-level same-fold and rolling-origin summaries, robustness tables, and index-recovery outputs.
-- `scripts/`: standalone verification, ACR recomputation, Figure 1-4 plotting, and the spatial, temporal, index-recovery, exogenous-driver and hydrochemical-boundary workflows. Model-training workflows require source data obtained separately.
+- `data/processed/`: released truth mirror, seven-row autocorrelation-recovery (ACR) inputs/results, random-versus-spatial fold summaries, the three-scale Assam spatial sensitivity tables, water-level same-fold and rolling-origin summaries, robustness tables, and index-recovery outputs.
+- `scripts/`: standalone verification, ACR recomputation, Figure 1-4 plotting, the Assam scale-sensitivity runner, and the spatial, temporal, index-recovery, exogenous-driver and hydrochemical-boundary workflows. Model-training workflows require source data obtained separately.
 - `figures/`: reference PNGs generated for the manuscript.
 - `metadata/`: data dictionary, external-source/provenance ledger, verbatim LLM extraction prompt (`llm_extraction_prompt_v2.md`), build metadata and SHA-256 checksums.
 
@@ -29,7 +29,7 @@ python scripts/verify_package.py
 
 Install `requirements-full.txt` only when rerunning model-training workflows from separately obtained source data. GPU workflows additionally require a CUDA-compatible PyTorch/XGBoost installation appropriate for the host system.
 
-The integrity check validates checksums, the 532/154/179/99 row contracts, the 91-paper water-level denominator, the 2-paper persistence numerator, the seven ACR rows and all 30 positive model-target spatial gaps.
+The integrity check validates checksums, the 532/154/179/99 row contracts, the 91-paper water-level denominator, the 2-paper persistence numerator, the seven ACR rows, all 30 positive model-target spatial gaps, and the released Assam scale-sensitivity tables.
 
 ## Recompute ACR
 
@@ -73,8 +73,8 @@ No raw third-party dataset is redistributed. Source identifiers and known licens
 
 Cite this release as:
 
-> Authors. Groundwater ML credibility audit: public data and reproducibility package. Version 1.0.0 (2026). Zenodo. https://doi.org/10.5281/zenodo.21320216
+> Jiang, S., Zhou, C., Yang, Y., Mao, Y., & Cheng, X. Groundwater ML credibility audit: public data and reproducibility package (2026). Zenodo. https://doi.org/10.5281/zenodo.21320215
 
 ## Contact and issues
 
-Author and contact metadata are maintained on the archival record. Report data or code issues through the archival record at https://doi.org/10.5281/zenodo.21320216.
+Author and contact metadata are maintained on the archival record. Report data or code issues through the archival record at https://doi.org/10.5281/zenodo.21320215.
